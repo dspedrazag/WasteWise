@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-10-23T15:56:14.938856+00:00",
+  "sha256": {
+    "config.json": "0b02bb02ebcefcf0ea8869c0a7aa740689891f5ba4c4aed1d789552904901d26",
+    "metrics.json": "ad7182a78f357dce09eaf7c7b0b7cbcf16a89cc86ac8fa9aa6e1cd34f3a01000",
+    "history.csv": "8be874f9f5384c3beec099572c3a0fb36a2475136820169e7e599397d261d3b4",
+    "validation_predictions.csv": "01a3a10312371856d30d895273bed4668daedc1948cd7655750591e5caf33da4",
+    "best_model.pt": "cee073d8b628df32f28c1f54147654fcd56687708934a4c41af4b0796d33d914"
+  }
+}

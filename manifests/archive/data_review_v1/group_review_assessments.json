@@ -1,0 +1,578 @@
+[
+  {
+    "review_id": "G001",
+    "proposed_group_id": "proposed_cd1e4de256ac",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The orange sticker has the same placement relative to the printing, with compatible flap cuts and progressive folding/tearing across the four views."
+  },
+  {
+    "review_id": "G002",
+    "proposed_group_id": "proposed_c40f7739b49a",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The irregular torn outline, exposed corrugation and intersecting creases correspond across front, reverse and bent views."
+  },
+  {
+    "review_id": "G003",
+    "proposed_group_id": "proposed_222cd198cfce",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The box proportions and packing tape are compatible, but the labelled side and plain interior do not provide a shared distinctive mark across every member."
+  },
+  {
+    "review_id": "G004",
+    "proposed_group_id": "proposed_c43cb7f1c315",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The same Chobani design and possible folded state suggest a relationship, but packaging artwork alone does not establish one physical carton."
+  },
+  {
+    "review_id": "G005",
+    "proposed_group_id": "proposed_d4568963f198",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The 14-image Silk proposal mixes intact, torn and folded views; some subgroups share damage, but one common object is not established for the whole packaging family."
+  },
+  {
+    "review_id": "G006",
+    "proposed_group_id": "proposed_23ee71256571",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The broad purple-carton proposal includes cardboard192.jpg, a brown printed close-up not visibly linked to the purple carton; the full 17-image grouping is unsupported."
+  },
+  {
+    "review_id": "G007",
+    "proposed_group_id": "proposed_d3b58fa4332f",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "Two bottle-mouth views have similar framing and shadows, but visible object-specific features are insufficient to establish identity."
+  },
+  {
+    "review_id": "G008",
+    "proposed_group_id": "proposed_a5f5ac800def",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The stemware has the same general shape, but no distinctive damage or mark is visible to distinguish one glass from another."
+  },
+  {
+    "review_id": "G009",
+    "proposed_group_id": "proposed_62f089384ba1",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The closed-jar views share a label remnant, but the open-mouth and differently marked views do not establish one identity across all six images."
+  },
+  {
+    "review_id": "G010",
+    "proposed_group_id": "proposed_7d7072c08737",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The sticker-linked lid views provide stronger evidence, but the residue/label-only and blurred views do not establish all five members as one jar."
+  },
+  {
+    "review_id": "G011",
+    "proposed_group_id": "proposed_d77e03704b3e",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The blue tumbler design matches, but molded shape and color do not identify an individual glass."
+  },
+  {
+    "review_id": "G012",
+    "proposed_group_id": "proposed_0d3a495aebb4",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The five views show a similar unmarked clear vessel; no unique feature links every member."
+  },
+  {
+    "review_id": "G013",
+    "proposed_group_id": "proposed_3c09f8640139",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The Jim Beam packaging and bottle geometry match, without a visible object-specific mark across all views."
+  },
+  {
+    "review_id": "G014",
+    "proposed_group_id": "proposed_97380bb40499",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The clear bottle is largely unmarked, so shape and top/side views alone do not establish identity."
+  },
+  {
+    "review_id": "G015",
+    "proposed_group_id": "proposed_997e5caea882",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The salsa-jar packaging is compatible across views, but a shared manufacturing label/cap is insufficient to confirm one object."
+  },
+  {
+    "review_id": "G016",
+    "proposed_group_id": "proposed_c2674cc1b679",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The brown bottle and partial label are compatible, but the changed viewpoint obscures a reliable shared tear or mark."
+  },
+  {
+    "review_id": "G017",
+    "proposed_group_id": "proposed_bd4d2ed85215",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The Ciroc bottle design and orange base match; those are product features, not demonstrated object-specific evidence."
+  },
+  {
+    "review_id": "G018",
+    "proposed_group_id": "proposed_9f13264a537f",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The green bottle's commercial labels and color match, but no distinctive individual feature is established."
+  },
+  {
+    "review_id": "G019",
+    "proposed_group_id": "proposed_83ba221c4861",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The irregular broken-glass shapes are compatible under rotation, but the fracture-edge correspondence is incomplete at these viewpoints."
+  },
+  {
+    "review_id": "G020",
+    "proposed_group_id": "proposed_79f80ba32652",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The same oval-tray close-up contains corresponding dents, rim creases and reflection geometry around the central stamp."
+  },
+  {
+    "review_id": "G021",
+    "proposed_group_id": "proposed_60a65f05cc7e",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The irregular oval-tray rim, central dent pattern and small dark marks match across the two closely framed views."
+  },
+  {
+    "review_id": "G022",
+    "proposed_group_id": "proposed_0ce34dd9351f",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The crumpled foil has the same irregular silhouette, folds and recesses, with closely matching background framing."
+  },
+  {
+    "review_id": "G023",
+    "proposed_group_id": "proposed_b06d97c28c2d",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The foil edge, crease network and small brown residue mark correspond in the two close-ups."
+  },
+  {
+    "review_id": "G024",
+    "proposed_group_id": "proposed_bbfe9cffda32",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "An intact and crushed purple can share packaging, but an individual mark connecting the before/after states is not established."
+  },
+  {
+    "review_id": "G025",
+    "proposed_group_id": "proposed_7983fcc8d9d0",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The round tray has compatible deformations, but linking its underside to both interior views requires closer edge/crease comparison."
+  },
+  {
+    "review_id": "G026",
+    "proposed_group_id": "proposed_c347e87c028f",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The molded rectangular tray pattern is common to manufactured trays; distinctive matching damage is not established across the two sides."
+  },
+  {
+    "review_id": "G027",
+    "proposed_group_id": "proposed_d4bd161f408d",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The proposal mixes tray/lining views with a more distant foil-tray image; common material and form do not establish all four as one object."
+  },
+  {
+    "review_id": "G028",
+    "proposed_group_id": "proposed_a0fee5f012d4",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The Coors can design and possible deformation sequence match, but unique evidence linking all four views is incomplete."
+  },
+  {
+    "review_id": "G029",
+    "proposed_group_id": "proposed_45b788f97ac2",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The attached lid's asymmetric hinge/cut edge, damaged label boundary and orange interior align across the opened-can views."
+  },
+  {
+    "review_id": "G030",
+    "proposed_group_id": "proposed_9e7fb0709ede",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The 12-image set mixes plain ends, exterior views and crushed forms; individual identity across the entire can sequence is not established."
+  },
+  {
+    "review_id": "G031",
+    "proposed_group_id": "proposed_eedcba106974",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "Several crushed-can views have compatible creases, but the complete 14-image sequence includes end-only views that do not establish one identity."
+  },
+  {
+    "review_id": "G032",
+    "proposed_group_id": "proposed_f08b3615e9d8",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The can-interior close-ups share the same seam, small dark marks, ring alignment and attached-lid framing."
+  },
+  {
+    "review_id": "G033",
+    "proposed_group_id": "proposed_9c0a6d2a70ee",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The purple molded-pulp pattern matches, but the crop and manufactured form do not establish one individual tray."
+  },
+  {
+    "review_id": "G034",
+    "proposed_group_id": "proposed_3bae4b705f5e",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The paper's curved edge, fold geometry, crop and nearby background mark correspond, supporting closely related captures rather than artwork alone."
+  },
+  {
+    "review_id": "G035",
+    "proposed_group_id": "proposed_0715f0739b2a",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The irregular crumpled newspaper outline and detailed fold network match across the pair."
+  },
+  {
+    "review_id": "G036",
+    "proposed_group_id": "proposed_2461a6321dcb",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The overlapping newspaper edges and their bends align with the same crop and shadow geometry."
+  },
+  {
+    "review_id": "G037",
+    "proposed_group_id": "proposed_c8ec10b563d8",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The directory has matching cover deformation, corner curvature and scene alignment in the paired captures."
+  },
+  {
+    "review_id": "G038",
+    "proposed_group_id": "proposed_30399948599c",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The folded advertising pages have the same arrangement of overlapping corners and curved folds."
+  },
+  {
+    "review_id": "G039",
+    "proposed_group_id": "proposed_ba4ce8e242a1",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The rolled newspaper crease, overlapping page edge and background shadow correspond across both images."
+  },
+  {
+    "review_id": "G040",
+    "proposed_group_id": "proposed_f538f16207e6",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The small central crease, uneven paper edges and image/background alignment match in the two captures."
+  },
+  {
+    "review_id": "G041",
+    "proposed_group_id": "proposed_fd74eb652614",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The same irregular tear near the upper edge and paper curvature appear in both views."
+  },
+  {
+    "review_id": "G042",
+    "proposed_group_id": "proposed_0064ee55a595",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The same curled page geometry and fold/shadow alignment accompany the matching print."
+  },
+  {
+    "review_id": "G043",
+    "proposed_group_id": "proposed_902f8806512d",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The top-edge deformation, overlapping white page and crop/background alignment match."
+  },
+  {
+    "review_id": "G044",
+    "proposed_group_id": "proposed_f7157fc8e11a",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The seven Harry's-ad images share printed content, and one near-identical pair is clear, but the full flat/crumpled family is not established as one sheet."
+  },
+  {
+    "review_id": "G045",
+    "proposed_group_id": "proposed_4dca9d335e1a",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The envelope's torn flap, small creases and window placement match across the changed exposure."
+  },
+  {
+    "review_id": "G046",
+    "proposed_group_id": "proposed_46ef433b94e0",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The rolled page shape, crease at the lower edge and reflected highlight/crop correspond."
+  },
+  {
+    "review_id": "G047",
+    "proposed_group_id": "proposed_4c554295fe04",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The photographs show different printed faces and folds; a common leaflet is possible but artwork alone does not establish the connection."
+  },
+  {
+    "review_id": "G048",
+    "proposed_group_id": "proposed_33275012cd66",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The leaflet's bent lower-right corner, uneven edge and matching shadow/crop support a related capture pair."
+  },
+  {
+    "review_id": "G049",
+    "proposed_group_id": "proposed_36d184ec1166",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The plate design is common and the folded views obscure individual stains or marks linking all three images."
+  },
+  {
+    "review_id": "G050",
+    "proposed_group_id": "proposed_e0922d771c9c",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The same layered newspapers, diagonal fold and visible underlying page corners appear in both captures."
+  },
+  {
+    "review_id": "G051",
+    "proposed_group_id": "proposed_4f817125f15c",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The open-page curvature, gutter fold and crop align across the two views."
+  },
+  {
+    "review_id": "G052",
+    "proposed_group_id": "proposed_aedd4f2d3bda",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The leaflet's edge, central crease and visible green underlying strip align in nearly the same scene."
+  },
+  {
+    "review_id": "G053",
+    "proposed_group_id": "proposed_0d8feb5035f4",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The envelope corner creases, edge curl and cast-shadow boundary correspond."
+  },
+  {
+    "review_id": "G054",
+    "proposed_group_id": "proposed_50f8e87bcca3",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The overlapping flyer layers, bent lower corner and diagonal fold arrangement match."
+  },
+  {
+    "review_id": "G055",
+    "proposed_group_id": "proposed_7fd9e5bb6b56",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The leaflet's irregular curled right edge and background marks align with the same composition."
+  },
+  {
+    "review_id": "G056",
+    "proposed_group_id": "proposed_bbba729d57c3",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The diagonal folded corner, page overlap and pointed lower edge correspond."
+  },
+  {
+    "review_id": "G057",
+    "proposed_group_id": "proposed_42cd9f7e1134",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The distinctive jagged tear through the red printed sheet and adjoining folded white portion match."
+  },
+  {
+    "review_id": "G058",
+    "proposed_group_id": "proposed_8ae4a2457c87",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The red package has matching irregular cut/torn edges and crease positions across its printed face and white reverse."
+  },
+  {
+    "review_id": "G059",
+    "proposed_group_id": "proposed_8cc355b1cef5",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The clear wrapper and orange seam pieces are compatible, but the folded transparent portions do not establish a reliable matching tear across both views."
+  },
+  {
+    "review_id": "G060",
+    "proposed_group_id": "proposed_cee30586b660",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The box views share commercial printing and dimensions without a visible unique mark linking the two sides."
+  },
+  {
+    "review_id": "G061",
+    "proposed_group_id": "proposed_225c026f63ac",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The same raised fold, overlapping flyer layers and curled lower edge appear with matching scene geometry."
+  },
+  {
+    "review_id": "G062",
+    "proposed_group_id": "proposed_c5413801aded",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The four red-cap bottle images include intact and deformed states; product design alone does not establish a common object across all members."
+  },
+  {
+    "review_id": "G063",
+    "proposed_group_id": "proposed_e5fef224fa0a",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The two water-bottle views show different label faces and deformation; a shared distinctive dent is not established."
+  },
+  {
+    "review_id": "G064",
+    "proposed_group_id": "proposed_792f9b209acc",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The close-ups show a largely unmarked white container and red cap, so near-identical composition is insufficient on its own."
+  },
+  {
+    "review_id": "G065",
+    "proposed_group_id": "proposed_4ccb9a837a23",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The blue-cap bottle views expose common manufactured features but no individual mark linking all four."
+  },
+  {
+    "review_id": "G066",
+    "proposed_group_id": "proposed_355daa608bd0",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The clear molded package has no distinctive damage visible across the three views."
+  },
+  {
+    "review_id": "G067",
+    "proposed_group_id": "proposed_a0bbc1b24771",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The water-bottle shoulders and labels are similar, but the different crinkles/viewpoints do not establish one object."
+  },
+  {
+    "review_id": "G068",
+    "proposed_group_id": "proposed_716bd237c40b",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The green bottle and printed branding match; no object-specific mark connects every view."
+  },
+  {
+    "review_id": "G069",
+    "proposed_group_id": "proposed_56f33ab366d7",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The proposed set mixes white-cap and open orange-cap views whose relationship needs checking; plain plastic parts do not establish one container sequence."
+  },
+  {
+    "review_id": "G070",
+    "proposed_group_id": "proposed_dc52755f6f09",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The juice-bottle views share standard labels and shape, without a distinctive mark established across all five."
+  },
+  {
+    "review_id": "G071",
+    "proposed_group_id": "proposed_7ad4256b75ca",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The black supplement-container views share a product label and shape, without an individual feature visible in all three."
+  },
+  {
+    "review_id": "G072",
+    "proposed_group_id": "proposed_5af2b6eec28a",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The green bottle caps are standard manufactured parts; top-view similarity does not establish identity."
+  },
+  {
+    "review_id": "G073",
+    "proposed_group_id": "proposed_3a473e386466",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The bottle's label and molded ridges match, but rotated crinkles do not yet identify one physical bottle."
+  },
+  {
+    "review_id": "G074",
+    "proposed_group_id": "proposed_7940f165c77d",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The same water-bottle design appears in different rotations/deformations without a reliable unique feature."
+  },
+  {
+    "review_id": "G075",
+    "proposed_group_id": "proposed_32d06b5b2e33",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The black packaged tray and opened wrapping may be related, but the full three-view connection is not established beyond the product form."
+  },
+  {
+    "review_id": "G076",
+    "proposed_group_id": "proposed_4b7cc7853222",
+    "visual_status": "supported",
+    "evidence_or_uncertainty": "The crushed black tray has a matching irregular split, raised flaps and bent rim across the three orientations."
+  },
+  {
+    "review_id": "G077",
+    "proposed_group_id": "proposed_945871af55d9",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The padded-mailer layers are compatible, but correspondence between the white face, silver face and torn state is not fully established."
+  },
+  {
+    "review_id": "G078",
+    "proposed_group_id": "proposed_0fa8ef9edbd2",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The Evian bottle views include close-ups and partial crops without a shared individual mark across all five."
+  },
+  {
+    "review_id": "G079",
+    "proposed_group_id": "proposed_bf96a8dc1a39",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The lychee-wrapper design matches, but front, back and torn states need a shared damage feature to establish one wrapper."
+  },
+  {
+    "review_id": "G080",
+    "proposed_group_id": "proposed_3874d7985079",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The green candy package may form a handling sequence; matching product print and an opening alone do not establish all three views as one object."
+  },
+  {
+    "review_id": "G081",
+    "proposed_group_id": "proposed_fd7c63b97b19",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The flat printed wrapper and crumpled foil views lack a demonstrated common unique feature."
+  },
+  {
+    "review_id": "G082",
+    "proposed_group_id": "proposed_e49f6aff2be7",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The green bottle sequence mixes intact, base and crushed views; common branding and shape do not establish all five as one object."
+  },
+  {
+    "review_id": "G083",
+    "proposed_group_id": "proposed_2550866226c9",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The Oreo package's front and back share product design, without established matching damage or an individual mark."
+  },
+  {
+    "review_id": "G084",
+    "proposed_group_id": "proposed_c4789c9ef83b",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The transparent bag views have different visible labels/sides and no established unique fold or tear linking them."
+  },
+  {
+    "review_id": "G085",
+    "proposed_group_id": "proposed_42a3eec25046",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The small printed packet may be folded in the second image, but repeated branding alone does not confirm the same packet."
+  },
+  {
+    "review_id": "G086",
+    "proposed_group_id": "proposed_7f3a64336685",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The five snack-wrapper views share design but mix folded, opened and interior surfaces; complete identity is not established."
+  },
+  {
+    "review_id": "G087",
+    "proposed_group_id": "proposed_27a4fedf3f7d",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The wrapper's front, reverse and opened interior may be related, but a distinctive feature connecting every member is not established."
+  },
+  {
+    "review_id": "G088",
+    "proposed_group_id": "proposed_dbd68af59d5e",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The Subway wrapper print repeats widely and the different crumples do not establish one physical sheet."
+  },
+  {
+    "review_id": "G089",
+    "proposed_group_id": "proposed_26b3cdb60eb9",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The food-cup views share standard shape and printed design without a visible individual mark."
+  },
+  {
+    "review_id": "G090",
+    "proposed_group_id": "proposed_022c12ca02f4",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The two wrapper views differ strongly in size/framing and visible material/design; the proposed front/reverse relationship is unsupported by a shared mark."
+  },
+  {
+    "review_id": "G091",
+    "proposed_group_id": "proposed_ed9962eb8fe9",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The cardboard pack, foil blisters and clear tray could be a related unpacking sequence, but their provenance and exact membership are unverified."
+  },
+  {
+    "review_id": "G092",
+    "proposed_group_id": "proposed_fd004968e842",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The lip-balm tube has common product features without visible individual damage linking both views."
+  },
+  {
+    "review_id": "G093",
+    "proposed_group_id": "proposed_98a4f230a84a",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The two reverse views closely match, but the front view lacks a sufficiently distinctive shared feature to confirm the full three-image group."
+  },
+  {
+    "review_id": "G094",
+    "proposed_group_id": "proposed_481211033f2a",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The floss case's open and closed views show a standard manufactured shape without an individual identifier."
+  },
+  {
+    "review_id": "G095",
+    "proposed_group_id": "proposed_a58eead6e9fe",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The torn padded envelope has a plausible front/reverse link, but the crumpled third view obscures the tear needed to establish all members."
+  },
+  {
+    "review_id": "G096",
+    "proposed_group_id": "proposed_5ee1ed80fda9",
+    "visual_status": "uncertain",
+    "evidence_or_uncertainty": "The three noodle cups share commercial printing, but distinct object identity is not established by that packaging alone."
+  }
+]

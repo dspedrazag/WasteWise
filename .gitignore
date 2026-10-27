@@ -23,3 +23,25 @@ env/
 
 # Environment variables / secrets
 .env
+
+# Local historical audit figures and notebook snapshots (preserved on disk)
+/results/data_review/
+/notebooks/backups/
+/notebooks/archive/00_data_review_full.ipynb
+
+# Model weights; keep future metrics, configurations, and histories in Git
+*.pt
+*.pth
+*.ckpt
+
+# Superseded review records retained locally; required archive inputs stay visible
+/manifests/archive/data_review_v1/audit_checks.json
+/manifests/archive/data_review_v1/cleanup_verification.json
+/manifests/archive/data_review_v1/class_review_counts.csv
+/manifests/archive/data_review_v1/contact_sheet_review.csv
+/manifests/archive/data_review_v1/data_review_summary.json
+/manifests/archive/data_review_v1/duplicate_review.before_cleanup.csv
+/manifests/archive/data_review_v1/inclusion_review.csv
+/manifests/archive/data_review_v1/integrity_verification.json
+/manifests/archive/data_review_v1/related_review_open_issues.csv
+/manifests/archive/data_review_v1/source_checksums_after.csv

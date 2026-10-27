@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-10-22T03:43:24.084550+00:00",
+  "source_root": "data/dataset-resized",
+  "archive": {
+    "path": "data/dataset-resized.zip",
+    "bytes": 42834870,
+    "sha256": "0bf472790f8b20e5c950d5b5012a9d38af0d3392efd65f8ce171334fc16b07c2"
+  },
+  "source_file_count": 2528,
+  "source_image_count": 2527,
+  "inventory_file": "manifests/source_checksums_before.csv",
+  "inventory_sha256": "1743e39fb79ddd4d5f91721a3cb65d72c35d71ac636eb873c888752b6c302749",
+  "inventory_format": "UTF-8 CSV; path,bytes,sha256; LF newlines; paths relative to source root sorted lexicographically; all files including non-images",
+  "source_directories": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "notebook_sha256_before": {
+    "playground.ipynb": "b255a7e852a34a21b646823d8507b74fcfdf7ecd09a3b6baa0227bc782ac21e2",
+    "training_experiments.ipynb": "af0aff6c8f9975f657874c9442f42a117121697edee6d82156dfd1a56bd4ed2f"
+  }
+}

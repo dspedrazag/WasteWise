@@ -1,0 +1,4004 @@
+{
+  "actual_proportions": {
+    "test": 0.14994049980166602,
+    "train": 0.700119000396668,
+    "validation": 0.14994049980166602
+  },
+  "class_counts": {
+    "cardboard": {
+      "test": 60,
+      "train": 282,
+      "validation": 61
+    },
+    "glass": {
+      "test": 75,
+      "train": 348,
+      "validation": 75
+    },
+    "metal": {
+      "test": 61,
+      "train": 287,
+      "validation": 61
+    },
+    "paper": {
+      "test": 89,
+      "train": 416,
+      "validation": 89
+    },
+    "plastic": {
+      "test": 72,
+      "train": 336,
+      "validation": 72
+    },
+    "trash": {
+      "test": 21,
+      "train": 96,
+      "validation": 20
+    }
+  },
+  "class_order": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "config": {
+    "algorithm": "globally_balanced_class_rounding_then_weighted_whole_group_assignment_v1",
+    "grouping_policy": "recorded_visual_evidence_with_bounded_conservative_links_v1",
+    "ratio_denominator": 20,
+    "ratio_numerators": [
+      14,
+      3,
+      3
+    ],
+    "seed": 42
+  },
+  "created_at_utc": "2026-10-22T20:09:14.950775+00:00",
+  "deviation_from_target_percentage_points": {
+    "test": -0.005950019833397824,
+    "train": 0.011900039666801199,
+    "validation": -0.005950019833397824
+  },
+  "eligible_images": 2521,
+  "excluded_images": 6,
+  "grouping": {
+    "accepted_links": [
+      {
+        "evidence_id": "G001",
+        "paths": [
+          "cardboard/cardboard130.jpg",
+          "cardboard/cardboard131.jpg",
+          "cardboard/cardboard132.jpg",
+          "cardboard/cardboard134.jpg"
+        ],
+        "reason": "The orange sticker has the same placement relative to the printing, with compatible flap cuts and progressive folding/tearing across the four views.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G002",
+        "paths": [
+          "cardboard/cardboard142.jpg",
+          "cardboard/cardboard143.jpg",
+          "cardboard/cardboard144.jpg",
+          "cardboard/cardboard145.jpg"
+        ],
+        "reason": "The irregular torn outline, exposed corrugation and intersecting creases correspond across front, reverse and bent views.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G019",
+        "paths": [
+          "glass/glass304.jpg",
+          "glass/glass404.jpg"
+        ],
+        "reason": "Compatible irregular fracture shapes under rotation make a same-object link plausible; the fracture correspondence remains incomplete.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "G020",
+        "paths": [
+          "metal/metal11.jpg",
+          "metal/metal221.jpg"
+        ],
+        "reason": "The same oval-tray close-up contains corresponding dents, rim creases and reflection geometry around the central stamp.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G021",
+        "paths": [
+          "metal/metal120.jpg",
+          "metal/metal50.jpg"
+        ],
+        "reason": "The irregular oval-tray rim, central dent pattern and small dark marks match across the two closely framed views.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G022",
+        "paths": [
+          "metal/metal122.jpg",
+          "metal/metal57.jpg"
+        ],
+        "reason": "The crumpled foil has the same irregular silhouette, folds and recesses, with closely matching background framing.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G023",
+        "paths": [
+          "metal/metal141.jpg",
+          "metal/metal390.jpg"
+        ],
+        "reason": "The foil edge, crease network and small brown residue mark correspond in the two close-ups.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G025",
+        "paths": [
+          "metal/metal169.jpg",
+          "metal/metal170.jpg",
+          "metal/metal171.jpg"
+        ],
+        "reason": "Compatible tray deformations support a possible handling/view sequence; correspondence across the underside and interior is uncertain.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "G028",
+        "paths": [
+          "metal/metal178.jpg",
+          "metal/metal179.jpg",
+          "metal/metal182.jpg",
+          "metal/metal183.jpg"
+        ],
+        "reason": "The recorded possible can-deformation sequence is kept together conservatively; this is a handling-sequence precaution, not a brand-based identity claim.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "G029",
+        "paths": [
+          "metal/metal187.jpg",
+          "metal/metal188.jpg",
+          "metal/metal189.jpg"
+        ],
+        "reason": "The attached lid's asymmetric hinge/cut edge, damaged label boundary and orange interior align across the opened-can views.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G032",
+        "paths": [
+          "metal/metal394.jpg",
+          "metal/metal76.jpg"
+        ],
+        "reason": "The can-interior close-ups share the same seam, small dark marks, ring alignment and attached-lid framing.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G034",
+        "paths": [
+          "paper/paper101.jpg",
+          "paper/paper108.jpg"
+        ],
+        "reason": "The paper's curved edge, fold geometry, crop and nearby background mark correspond, supporting closely related captures rather than artwork alone.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G035",
+        "paths": [
+          "paper/paper123.jpg",
+          "paper/paper547.jpg"
+        ],
+        "reason": "The irregular crumpled newspaper outline and detailed fold network match across the pair.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G036",
+        "paths": [
+          "paper/paper135.jpg",
+          "paper/paper496.jpg"
+        ],
+        "reason": "The overlapping newspaper edges and their bends align with the same crop and shadow geometry.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G037",
+        "paths": [
+          "paper/paper136.jpg",
+          "paper/paper148.jpg"
+        ],
+        "reason": "The directory has matching cover deformation, corner curvature and scene alignment in the paired captures.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G038",
+        "paths": [
+          "paper/paper147.jpg",
+          "paper/paper99.jpg"
+        ],
+        "reason": "The folded advertising pages have the same arrangement of overlapping corners and curved folds.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G039",
+        "paths": [
+          "paper/paper152.jpg",
+          "paper/paper392.jpg"
+        ],
+        "reason": "The rolled newspaper crease, overlapping page edge and background shadow correspond across both images.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G040",
+        "paths": [
+          "paper/paper176.jpg",
+          "paper/paper549.jpg"
+        ],
+        "reason": "The small central crease, uneven paper edges and image/background alignment match in the two captures.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G041",
+        "paths": [
+          "paper/paper180.jpg",
+          "paper/paper284.jpg"
+        ],
+        "reason": "The same irregular tear near the upper edge and paper curvature appear in both views.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G042",
+        "paths": [
+          "paper/paper185.jpg",
+          "paper/paper390.jpg"
+        ],
+        "reason": "The same curled page geometry and fold/shadow alignment accompany the matching print.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G043",
+        "paths": [
+          "paper/paper2.jpg",
+          "paper/paper40.jpg"
+        ],
+        "reason": "The top-edge deformation, overlapping white page and crop/background alignment match.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G044",
+        "paths": [
+          "paper/paper459.jpg",
+          "paper/paper466.jpg"
+        ],
+        "reason": "The existing G044 assessment identifies a clear near-identical pair; candidate_0003 identifies its members. The other advertisement images are not grouped on artwork alone.",
+        "status": "accept_supported_subgroup_only"
+      },
+      {
+        "evidence_id": "G045",
+        "paths": [
+          "paper/paper240.jpg",
+          "paper/paper306.jpg"
+        ],
+        "reason": "The envelope's torn flap, small creases and window placement match across the changed exposure.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G046",
+        "paths": [
+          "paper/paper246.jpg",
+          "paper/paper349.jpg"
+        ],
+        "reason": "The rolled page shape, crease at the lower edge and reflected highlight/crop correspond.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G048",
+        "paths": [
+          "paper/paper265.jpg",
+          "paper/paper408.jpg"
+        ],
+        "reason": "The leaflet's bent lower-right corner, uneven edge and matching shadow/crop support a related capture pair.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G050",
+        "paths": [
+          "paper/paper305.jpg",
+          "paper/paper308.jpg"
+        ],
+        "reason": "The same layered newspapers, diagonal fold and visible underlying page corners appear in both captures.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G051",
+        "paths": [
+          "paper/paper314.jpg",
+          "paper/paper53.jpg"
+        ],
+        "reason": "The open-page curvature, gutter fold and crop align across the two views.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G052",
+        "paths": [
+          "paper/paper345.jpg",
+          "paper/paper451.jpg"
+        ],
+        "reason": "The leaflet's edge, central crease and visible green underlying strip align in nearly the same scene.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G053",
+        "paths": [
+          "paper/paper39.jpg",
+          "paper/paper467.jpg"
+        ],
+        "reason": "The envelope corner creases, edge curl and cast-shadow boundary correspond.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G054",
+        "paths": [
+          "paper/paper457.jpg",
+          "paper/paper553.jpg"
+        ],
+        "reason": "The overlapping flyer layers, bent lower corner and diagonal fold arrangement match.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G055",
+        "paths": [
+          "paper/paper474.jpg",
+          "paper/paper89.jpg"
+        ],
+        "reason": "The leaflet's irregular curled right edge and background marks align with the same composition.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G056",
+        "paths": [
+          "paper/paper522.jpg",
+          "paper/paper534.jpg"
+        ],
+        "reason": "The diagonal folded corner, page overlap and pointed lower edge correspond.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G057",
+        "paths": [
+          "paper/paper540.jpg",
+          "paper/paper56.jpg"
+        ],
+        "reason": "The distinctive jagged tear through the red printed sheet and adjoining folded white portion match.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G058",
+        "paths": [
+          "paper/paper587.jpg",
+          "paper/paper588.jpg",
+          "paper/paper589.jpg"
+        ],
+        "reason": "The red package has matching irregular cut/torn edges and crease positions across its printed face and white reverse.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G059",
+        "paths": [
+          "paper/paper590.jpg",
+          "paper/paper591.jpg"
+        ],
+        "reason": "Compatible orange seam fragments and folded transparent portions suggest a possible wrapper-handling sequence; a matching tear is unverified.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "G061",
+        "paths": [
+          "paper/paper68.jpg",
+          "paper/paper74.jpg"
+        ],
+        "reason": "The same raised fold, overlapping flyer layers and curled lower edge appear with matching scene geometry.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G076",
+        "paths": [
+          "plastic/plastic452.jpg",
+          "plastic/plastic453.jpg",
+          "plastic/plastic454.jpg"
+        ],
+        "reason": "The crushed black tray has a matching irregular split, raised flaps and bent rim across the three orientations.",
+        "status": "accept_visually_supported"
+      },
+      {
+        "evidence_id": "G077",
+        "paths": [
+          "plastic/plastic455.jpg",
+          "plastic/plastic456.jpg",
+          "plastic/plastic457.jpg"
+        ],
+        "reason": "Compatible padded-mailer layers and a torn state suggest a possible handling sequence; full cross-surface correspondence is uncertain.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "G091",
+        "paths": [
+          "trash/trash124.jpg",
+          "trash/trash125.jpg",
+          "trash/trash126.jpg"
+        ],
+        "reason": "The pack, foil blisters, and tray may belong to one unpacking sequence; shared capture provenance remains unverified.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "G093",
+        "paths": [
+          "trash/trash130.jpg",
+          "trash/trash131.jpg"
+        ],
+        "reason": "The two rear views share the lower-seam deformation, dark mark, and closely corresponding framing. The front view is not linked solely by product branding.",
+        "status": "accept_supported_subgroup_only"
+      },
+      {
+        "evidence_id": "G095",
+        "paths": [
+          "trash/trash135.jpg",
+          "trash/trash136.jpg",
+          "trash/trash137.jpg"
+        ],
+        "reason": "The torn envelope has a plausible front/reverse link and a crumpled view that obscures the tear; keep the possible handling sequence together.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "candidate_0029",
+        "paths": [
+          "metal/metal165.jpg",
+          "metal/metal166.jpg"
+        ],
+        "reason": "The review describes foil at different stages of crumpling, a plausible same-object handling sequence with uncertain identity.",
+        "status": "accept_conservative_uncertain"
+      },
+      {
+        "evidence_id": "candidate_0160",
+        "paths": [
+          "paper/paper277.jpg",
+          "paper/paper552.jpg"
+        ],
+        "reason": "The review describes an envelope and a torn envelope as a possible before/after handling pair; keep the pair together without claiming confirmed identity.",
+        "status": "accept_conservative_uncertain"
+      }
+    ],
+    "decisions": [
+      {
+        "accepted_paths": [
+          "cardboard/cardboard130.jpg",
+          "cardboard/cardboard131.jpg",
+          "cardboard/cardboard132.jpg",
+          "cardboard/cardboard134.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G001",
+        "original_observation": "The orange sticker has the same placement relative to the printing, with compatible flap cuts and progressive folding/tearing across the four views.",
+        "original_paths": [
+          "cardboard/cardboard130.jpg",
+          "cardboard/cardboard131.jpg",
+          "cardboard/cardboard132.jpg",
+          "cardboard/cardboard134.jpg"
+        ],
+        "proposed_group_id": "proposed_cd1e4de256ac",
+        "reason": "The orange sticker has the same placement relative to the printing, with compatible flap cuts and progressive folding/tearing across the four views.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "cardboard/cardboard142.jpg",
+          "cardboard/cardboard143.jpg",
+          "cardboard/cardboard144.jpg",
+          "cardboard/cardboard145.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G002",
+        "original_observation": "The irregular torn outline, exposed corrugation and intersecting creases correspond across front, reverse and bent views.",
+        "original_paths": [
+          "cardboard/cardboard142.jpg",
+          "cardboard/cardboard143.jpg",
+          "cardboard/cardboard144.jpg",
+          "cardboard/cardboard145.jpg"
+        ],
+        "proposed_group_id": "proposed_c40f7739b49a",
+        "reason": "The irregular torn outline, exposed corrugation and intersecting creases correspond across front, reverse and bent views.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G003",
+        "original_observation": "The box proportions and packing tape are compatible, but the labelled side and plain interior do not provide a shared distinctive mark across every member.",
+        "original_paths": [
+          "cardboard/cardboard146.jpg",
+          "cardboard/cardboard147.jpg",
+          "cardboard/cardboard148.jpg",
+          "cardboard/cardboard149.jpg"
+        ],
+        "proposed_group_id": "proposed_222cd198cfce",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G004",
+        "original_observation": "The same Chobani design and possible folded state suggest a relationship, but packaging artwork alone does not establish one physical carton.",
+        "original_paths": [
+          "cardboard/cardboard161.jpg",
+          "cardboard/cardboard162.jpg",
+          "cardboard/cardboard163.jpg"
+        ],
+        "proposed_group_id": "proposed_c43cb7f1c315",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G005",
+        "original_observation": "The 14-image Silk proposal mixes intact, torn and folded views; some subgroups share damage, but one common object is not established for the whole packaging family.",
+        "original_paths": [
+          "cardboard/cardboard166.jpg",
+          "cardboard/cardboard167.jpg",
+          "cardboard/cardboard168.jpg",
+          "cardboard/cardboard169.jpg",
+          "cardboard/cardboard170.jpg",
+          "cardboard/cardboard171.jpg",
+          "cardboard/cardboard172.jpg",
+          "cardboard/cardboard173.jpg",
+          "cardboard/cardboard174.jpg",
+          "cardboard/cardboard175.jpg",
+          "cardboard/cardboard176.jpg",
+          "cardboard/cardboard177.jpg",
+          "cardboard/cardboard178.jpg",
+          "cardboard/cardboard179.jpg"
+        ],
+        "proposed_group_id": "proposed_d4568963f198",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G006",
+        "original_observation": "The broad purple-carton proposal includes cardboard192.jpg, a brown printed close-up not visibly linked to the purple carton; the full 17-image grouping is unsupported.",
+        "original_paths": [
+          "cardboard/cardboard189.jpg",
+          "cardboard/cardboard190.jpg",
+          "cardboard/cardboard191.jpg",
+          "cardboard/cardboard192.jpg",
+          "cardboard/cardboard193.jpg",
+          "cardboard/cardboard194.jpg",
+          "cardboard/cardboard195.jpg",
+          "cardboard/cardboard196.jpg",
+          "cardboard/cardboard197.jpg",
+          "cardboard/cardboard198.jpg",
+          "cardboard/cardboard199.jpg",
+          "cardboard/cardboard200.jpg",
+          "cardboard/cardboard201.jpg",
+          "cardboard/cardboard202.jpg",
+          "cardboard/cardboard203.jpg",
+          "cardboard/cardboard204.jpg",
+          "cardboard/cardboard205.jpg"
+        ],
+        "proposed_group_id": "proposed_23ee71256571",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G007",
+        "original_observation": "Two bottle-mouth views have similar framing and shadows, but visible object-specific features are insufficient to establish identity.",
+        "original_paths": [
+          "glass/glass127.jpg",
+          "glass/glass339.jpg"
+        ],
+        "proposed_group_id": "proposed_d3b58fa4332f",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G008",
+        "original_observation": "The stemware has the same general shape, but no distinctive damage or mark is visible to distinguish one glass from another.",
+        "original_paths": [
+          "glass/glass15.jpg",
+          "glass/glass3.jpg"
+        ],
+        "proposed_group_id": "proposed_a5f5ac800def",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G009",
+        "original_observation": "The closed-jar views share a label remnant, but the open-mouth and differently marked views do not establish one identity across all six images.",
+        "original_paths": [
+          "glass/glass169.jpg",
+          "glass/glass170.jpg",
+          "glass/glass171.jpg",
+          "glass/glass172.jpg",
+          "glass/glass173.jpg",
+          "glass/glass175.jpg"
+        ],
+        "proposed_group_id": "proposed_62f089384ba1",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G010",
+        "original_observation": "The sticker-linked lid views provide stronger evidence, but the residue/label-only and blurred views do not establish all five members as one jar.",
+        "original_paths": [
+          "glass/glass185.jpg",
+          "glass/glass186.jpg",
+          "glass/glass190.jpg",
+          "glass/glass192.jpg",
+          "glass/glass199.jpg"
+        ],
+        "proposed_group_id": "proposed_7d7072c08737",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G011",
+        "original_observation": "The blue tumbler design matches, but molded shape and color do not identify an individual glass.",
+        "original_paths": [
+          "glass/glass193.jpg",
+          "glass/glass194.jpg"
+        ],
+        "proposed_group_id": "proposed_d77e03704b3e",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G012",
+        "original_observation": "The five views show a similar unmarked clear vessel; no unique feature links every member.",
+        "original_paths": [
+          "glass/glass203.jpg",
+          "glass/glass204.jpg",
+          "glass/glass205.jpg",
+          "glass/glass206.jpg",
+          "glass/glass210.jpg"
+        ],
+        "proposed_group_id": "proposed_0d3a495aebb4",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G013",
+        "original_observation": "The Jim Beam packaging and bottle geometry match, without a visible object-specific mark across all views.",
+        "original_paths": [
+          "glass/glass207.jpg",
+          "glass/glass208.jpg",
+          "glass/glass209.jpg"
+        ],
+        "proposed_group_id": "proposed_3c09f8640139",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G014",
+        "original_observation": "The clear bottle is largely unmarked, so shape and top/side views alone do not establish identity.",
+        "original_paths": [
+          "glass/glass211.jpg",
+          "glass/glass212.jpg",
+          "glass/glass213.jpg",
+          "glass/glass214.jpg"
+        ],
+        "proposed_group_id": "proposed_97380bb40499",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G015",
+        "original_observation": "The salsa-jar packaging is compatible across views, but a shared manufacturing label/cap is insufficient to confirm one object.",
+        "original_paths": [
+          "glass/glass217.jpg",
+          "glass/glass218.jpg",
+          "glass/glass219.jpg"
+        ],
+        "proposed_group_id": "proposed_997e5caea882",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G016",
+        "original_observation": "The brown bottle and partial label are compatible, but the changed viewpoint obscures a reliable shared tear or mark.",
+        "original_paths": [
+          "glass/glass244.jpg",
+          "glass/glass69.jpg"
+        ],
+        "proposed_group_id": "proposed_c2674cc1b679",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G017",
+        "original_observation": "The Ciroc bottle design and orange base match; those are product features, not demonstrated object-specific evidence.",
+        "original_paths": [
+          "glass/glass263.jpg",
+          "glass/glass264.jpg",
+          "glass/glass265.jpg"
+        ],
+        "proposed_group_id": "proposed_bd4d2ed85215",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G018",
+        "original_observation": "The green bottle's commercial labels and color match, but no distinctive individual feature is established.",
+        "original_paths": [
+          "glass/glass266.jpg",
+          "glass/glass267.jpg",
+          "glass/glass268.jpg"
+        ],
+        "proposed_group_id": "proposed_9f13264a537f",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "glass/glass304.jpg",
+          "glass/glass404.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G019",
+        "original_observation": "The irregular broken-glass shapes are compatible under rotation, but the fracture-edge correspondence is incomplete at these viewpoints.",
+        "original_paths": [
+          "glass/glass304.jpg",
+          "glass/glass404.jpg"
+        ],
+        "proposed_group_id": "proposed_83ba221c4861",
+        "reason": "Compatible irregular fracture shapes under rotation make a same-object link plausible; the fracture correspondence remains incomplete.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal11.jpg",
+          "metal/metal221.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G020",
+        "original_observation": "The same oval-tray close-up contains corresponding dents, rim creases and reflection geometry around the central stamp.",
+        "original_paths": [
+          "metal/metal11.jpg",
+          "metal/metal221.jpg"
+        ],
+        "proposed_group_id": "proposed_79f80ba32652",
+        "reason": "The same oval-tray close-up contains corresponding dents, rim creases and reflection geometry around the central stamp.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal120.jpg",
+          "metal/metal50.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G021",
+        "original_observation": "The irregular oval-tray rim, central dent pattern and small dark marks match across the two closely framed views.",
+        "original_paths": [
+          "metal/metal120.jpg",
+          "metal/metal50.jpg"
+        ],
+        "proposed_group_id": "proposed_60a65f05cc7e",
+        "reason": "The irregular oval-tray rim, central dent pattern and small dark marks match across the two closely framed views.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal122.jpg",
+          "metal/metal57.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G022",
+        "original_observation": "The crumpled foil has the same irregular silhouette, folds and recesses, with closely matching background framing.",
+        "original_paths": [
+          "metal/metal122.jpg",
+          "metal/metal57.jpg"
+        ],
+        "proposed_group_id": "proposed_0ce34dd9351f",
+        "reason": "The crumpled foil has the same irregular silhouette, folds and recesses, with closely matching background framing.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal141.jpg",
+          "metal/metal390.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G023",
+        "original_observation": "The foil edge, crease network and small brown residue mark correspond in the two close-ups.",
+        "original_paths": [
+          "metal/metal141.jpg",
+          "metal/metal390.jpg"
+        ],
+        "proposed_group_id": "proposed_b06d97c28c2d",
+        "reason": "The foil edge, crease network and small brown residue mark correspond in the two close-ups.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G024",
+        "original_observation": "An intact and crushed purple can share packaging, but an individual mark connecting the before/after states is not established.",
+        "original_paths": [
+          "metal/metal149.jpg",
+          "metal/metal9.jpg"
+        ],
+        "proposed_group_id": "proposed_bbfe9cffda32",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal169.jpg",
+          "metal/metal170.jpg",
+          "metal/metal171.jpg"
+        ],
+        "assigned_subsets": [
+          "test"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G025",
+        "original_observation": "The round tray has compatible deformations, but linking its underside to both interior views requires closer edge/crease comparison.",
+        "original_paths": [
+          "metal/metal169.jpg",
+          "metal/metal170.jpg",
+          "metal/metal171.jpg"
+        ],
+        "proposed_group_id": "proposed_7983fcc8d9d0",
+        "reason": "Compatible tray deformations support a possible handling/view sequence; correspondence across the underside and interior is uncertain.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G026",
+        "original_observation": "The molded rectangular tray pattern is common to manufactured trays; distinctive matching damage is not established across the two sides.",
+        "original_paths": [
+          "metal/metal172.jpg",
+          "metal/metal173.jpg"
+        ],
+        "proposed_group_id": "proposed_c347e87c028f",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G027",
+        "original_observation": "The proposal mixes tray/lining views with a more distant foil-tray image; common material and form do not establish all four as one object.",
+        "original_paths": [
+          "metal/metal175.jpg",
+          "metal/metal176.jpg",
+          "metal/metal177.jpg",
+          "metal/metal5.jpg"
+        ],
+        "proposed_group_id": "proposed_d4bd161f408d",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal178.jpg",
+          "metal/metal179.jpg",
+          "metal/metal182.jpg",
+          "metal/metal183.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G028",
+        "original_observation": "The Coors can design and possible deformation sequence match, but unique evidence linking all four views is incomplete.",
+        "original_paths": [
+          "metal/metal178.jpg",
+          "metal/metal179.jpg",
+          "metal/metal182.jpg",
+          "metal/metal183.jpg"
+        ],
+        "proposed_group_id": "proposed_a0fee5f012d4",
+        "reason": "The recorded possible can-deformation sequence is kept together conservatively; this is a handling-sequence precaution, not a brand-based identity claim.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal187.jpg",
+          "metal/metal188.jpg",
+          "metal/metal189.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G029",
+        "original_observation": "The attached lid's asymmetric hinge/cut edge, damaged label boundary and orange interior align across the opened-can views.",
+        "original_paths": [
+          "metal/metal187.jpg",
+          "metal/metal188.jpg",
+          "metal/metal189.jpg"
+        ],
+        "proposed_group_id": "proposed_45b788f97ac2",
+        "reason": "The attached lid's asymmetric hinge/cut edge, damaged label boundary and orange interior align across the opened-can views.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G030",
+        "original_observation": "The 12-image set mixes plain ends, exterior views and crushed forms; individual identity across the entire can sequence is not established.",
+        "original_paths": [
+          "metal/metal190.jpg",
+          "metal/metal191.jpg",
+          "metal/metal192.jpg",
+          "metal/metal193.jpg",
+          "metal/metal194.jpg",
+          "metal/metal195.jpg",
+          "metal/metal197.jpg",
+          "metal/metal198.jpg",
+          "metal/metal199.jpg",
+          "metal/metal200.jpg",
+          "metal/metal201.jpg",
+          "metal/metal202.jpg"
+        ],
+        "proposed_group_id": "proposed_9e7fb0709ede",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G031",
+        "original_observation": "Several crushed-can views have compatible creases, but the complete 14-image sequence includes end-only views that do not establish one identity.",
+        "original_paths": [
+          "metal/metal203.jpg",
+          "metal/metal204.jpg",
+          "metal/metal205.jpg",
+          "metal/metal206.jpg",
+          "metal/metal207.jpg",
+          "metal/metal208.jpg",
+          "metal/metal209.jpg",
+          "metal/metal210.jpg",
+          "metal/metal211.jpg",
+          "metal/metal212.jpg",
+          "metal/metal213.jpg",
+          "metal/metal214.jpg",
+          "metal/metal215.jpg",
+          "metal/metal216.jpg"
+        ],
+        "proposed_group_id": "proposed_eedcba106974",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal394.jpg",
+          "metal/metal76.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G032",
+        "original_observation": "The can-interior close-ups share the same seam, small dark marks, ring alignment and attached-lid framing.",
+        "original_paths": [
+          "metal/metal394.jpg",
+          "metal/metal76.jpg"
+        ],
+        "proposed_group_id": "proposed_f08b3615e9d8",
+        "reason": "The can-interior close-ups share the same seam, small dark marks, ring alignment and attached-lid framing.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G033",
+        "original_observation": "The purple molded-pulp pattern matches, but the crop and manufactured form do not establish one individual tray.",
+        "original_paths": [
+          "paper/paper10.jpg",
+          "paper/paper166.jpg",
+          "paper/paper283.jpg"
+        ],
+        "proposed_group_id": "proposed_9c0a6d2a70ee",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper101.jpg",
+          "paper/paper108.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G034",
+        "original_observation": "The paper's curved edge, fold geometry, crop and nearby background mark correspond, supporting closely related captures rather than artwork alone.",
+        "original_paths": [
+          "paper/paper101.jpg",
+          "paper/paper108.jpg"
+        ],
+        "proposed_group_id": "proposed_3bae4b705f5e",
+        "reason": "The paper's curved edge, fold geometry, crop and nearby background mark correspond, supporting closely related captures rather than artwork alone.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper123.jpg",
+          "paper/paper547.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G035",
+        "original_observation": "The irregular crumpled newspaper outline and detailed fold network match across the pair.",
+        "original_paths": [
+          "paper/paper123.jpg",
+          "paper/paper547.jpg"
+        ],
+        "proposed_group_id": "proposed_0715f0739b2a",
+        "reason": "The irregular crumpled newspaper outline and detailed fold network match across the pair.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper135.jpg",
+          "paper/paper496.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G036",
+        "original_observation": "The overlapping newspaper edges and their bends align with the same crop and shadow geometry.",
+        "original_paths": [
+          "paper/paper135.jpg",
+          "paper/paper496.jpg"
+        ],
+        "proposed_group_id": "proposed_2461a6321dcb",
+        "reason": "The overlapping newspaper edges and their bends align with the same crop and shadow geometry.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper136.jpg",
+          "paper/paper148.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G037",
+        "original_observation": "The directory has matching cover deformation, corner curvature and scene alignment in the paired captures.",
+        "original_paths": [
+          "paper/paper136.jpg",
+          "paper/paper148.jpg"
+        ],
+        "proposed_group_id": "proposed_c8ec10b563d8",
+        "reason": "The directory has matching cover deformation, corner curvature and scene alignment in the paired captures.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper147.jpg",
+          "paper/paper99.jpg"
+        ],
+        "assigned_subsets": [
+          "test"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G038",
+        "original_observation": "The folded advertising pages have the same arrangement of overlapping corners and curved folds.",
+        "original_paths": [
+          "paper/paper147.jpg",
+          "paper/paper99.jpg"
+        ],
+        "proposed_group_id": "proposed_30399948599c",
+        "reason": "The folded advertising pages have the same arrangement of overlapping corners and curved folds.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper152.jpg",
+          "paper/paper392.jpg"
+        ],
+        "assigned_subsets": [
+          "test"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G039",
+        "original_observation": "The rolled newspaper crease, overlapping page edge and background shadow correspond across both images.",
+        "original_paths": [
+          "paper/paper152.jpg",
+          "paper/paper392.jpg"
+        ],
+        "proposed_group_id": "proposed_ba4ce8e242a1",
+        "reason": "The rolled newspaper crease, overlapping page edge and background shadow correspond across both images.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper176.jpg",
+          "paper/paper549.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G040",
+        "original_observation": "The small central crease, uneven paper edges and image/background alignment match in the two captures.",
+        "original_paths": [
+          "paper/paper176.jpg",
+          "paper/paper549.jpg"
+        ],
+        "proposed_group_id": "proposed_f538f16207e6",
+        "reason": "The small central crease, uneven paper edges and image/background alignment match in the two captures.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper180.jpg",
+          "paper/paper284.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G041",
+        "original_observation": "The same irregular tear near the upper edge and paper curvature appear in both views.",
+        "original_paths": [
+          "paper/paper180.jpg",
+          "paper/paper284.jpg"
+        ],
+        "proposed_group_id": "proposed_fd74eb652614",
+        "reason": "The same irregular tear near the upper edge and paper curvature appear in both views.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper185.jpg",
+          "paper/paper390.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G042",
+        "original_observation": "The same curled page geometry and fold/shadow alignment accompany the matching print.",
+        "original_paths": [
+          "paper/paper185.jpg",
+          "paper/paper390.jpg"
+        ],
+        "proposed_group_id": "proposed_0064ee55a595",
+        "reason": "The same curled page geometry and fold/shadow alignment accompany the matching print.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper2.jpg",
+          "paper/paper40.jpg"
+        ],
+        "assigned_subsets": [
+          "test"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G043",
+        "original_observation": "The top-edge deformation, overlapping white page and crop/background alignment match.",
+        "original_paths": [
+          "paper/paper2.jpg",
+          "paper/paper40.jpg"
+        ],
+        "proposed_group_id": "proposed_902f8806512d",
+        "reason": "The top-edge deformation, overlapping white page and crop/background alignment match.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper459.jpg",
+          "paper/paper466.jpg"
+        ],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G044",
+        "original_observation": "The seven Harry's-ad images share printed content, and one near-identical pair is clear, but the full flat/crumpled family is not established as one sheet.",
+        "original_paths": [
+          "paper/paper238.jpg",
+          "paper/paper440.jpg",
+          "paper/paper459.jpg",
+          "paper/paper466.jpg",
+          "paper/paper529.jpg",
+          "paper/paper532.jpg",
+          "paper/paper94.jpg"
+        ],
+        "proposed_group_id": "proposed_f7157fc8e11a",
+        "reason": "The existing G044 assessment identifies a clear near-identical pair; candidate_0003 identifies its members. The other advertisement images are not grouped on artwork alone.",
+        "treatment": "accept_supported_subgroup_only"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper240.jpg",
+          "paper/paper306.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G045",
+        "original_observation": "The envelope's torn flap, small creases and window placement match across the changed exposure.",
+        "original_paths": [
+          "paper/paper240.jpg",
+          "paper/paper306.jpg"
+        ],
+        "proposed_group_id": "proposed_4dca9d335e1a",
+        "reason": "The envelope's torn flap, small creases and window placement match across the changed exposure.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper246.jpg",
+          "paper/paper349.jpg"
+        ],
+        "assigned_subsets": [
+          "test"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G046",
+        "original_observation": "The rolled page shape, crease at the lower edge and reflected highlight/crop correspond.",
+        "original_paths": [
+          "paper/paper246.jpg",
+          "paper/paper349.jpg"
+        ],
+        "proposed_group_id": "proposed_46ef433b94e0",
+        "reason": "The rolled page shape, crease at the lower edge and reflected highlight/crop correspond.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G047",
+        "original_observation": "The photographs show different printed faces and folds; a common leaflet is possible but artwork alone does not establish the connection.",
+        "original_paths": [
+          "paper/paper262.jpg",
+          "paper/paper72.jpg"
+        ],
+        "proposed_group_id": "proposed_4c554295fe04",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper265.jpg",
+          "paper/paper408.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G048",
+        "original_observation": "The leaflet's bent lower-right corner, uneven edge and matching shadow/crop support a related capture pair.",
+        "original_paths": [
+          "paper/paper265.jpg",
+          "paper/paper408.jpg"
+        ],
+        "proposed_group_id": "proposed_33275012cd66",
+        "reason": "The leaflet's bent lower-right corner, uneven edge and matching shadow/crop support a related capture pair.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G049",
+        "original_observation": "The plate design is common and the folded views obscure individual stains or marks linking all three images.",
+        "original_paths": [
+          "paper/paper3.jpg",
+          "paper/paper370.jpg",
+          "paper/paper521.jpg"
+        ],
+        "proposed_group_id": "proposed_36d184ec1166",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper305.jpg",
+          "paper/paper308.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G050",
+        "original_observation": "The same layered newspapers, diagonal fold and visible underlying page corners appear in both captures.",
+        "original_paths": [
+          "paper/paper305.jpg",
+          "paper/paper308.jpg"
+        ],
+        "proposed_group_id": "proposed_e0922d771c9c",
+        "reason": "The same layered newspapers, diagonal fold and visible underlying page corners appear in both captures.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper314.jpg",
+          "paper/paper53.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G051",
+        "original_observation": "The open-page curvature, gutter fold and crop align across the two views.",
+        "original_paths": [
+          "paper/paper314.jpg",
+          "paper/paper53.jpg"
+        ],
+        "proposed_group_id": "proposed_4f817125f15c",
+        "reason": "The open-page curvature, gutter fold and crop align across the two views.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper345.jpg",
+          "paper/paper451.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G052",
+        "original_observation": "The leaflet's edge, central crease and visible green underlying strip align in nearly the same scene.",
+        "original_paths": [
+          "paper/paper345.jpg",
+          "paper/paper451.jpg"
+        ],
+        "proposed_group_id": "proposed_aedd4f2d3bda",
+        "reason": "The leaflet's edge, central crease and visible green underlying strip align in nearly the same scene.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper39.jpg",
+          "paper/paper467.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G053",
+        "original_observation": "The envelope corner creases, edge curl and cast-shadow boundary correspond.",
+        "original_paths": [
+          "paper/paper39.jpg",
+          "paper/paper467.jpg"
+        ],
+        "proposed_group_id": "proposed_0d8feb5035f4",
+        "reason": "The envelope corner creases, edge curl and cast-shadow boundary correspond.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper457.jpg",
+          "paper/paper553.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G054",
+        "original_observation": "The overlapping flyer layers, bent lower corner and diagonal fold arrangement match.",
+        "original_paths": [
+          "paper/paper457.jpg",
+          "paper/paper553.jpg"
+        ],
+        "proposed_group_id": "proposed_50f8e87bcca3",
+        "reason": "The overlapping flyer layers, bent lower corner and diagonal fold arrangement match.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper474.jpg",
+          "paper/paper89.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G055",
+        "original_observation": "The leaflet's irregular curled right edge and background marks align with the same composition.",
+        "original_paths": [
+          "paper/paper474.jpg",
+          "paper/paper89.jpg"
+        ],
+        "proposed_group_id": "proposed_7fd9e5bb6b56",
+        "reason": "The leaflet's irregular curled right edge and background marks align with the same composition.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper522.jpg",
+          "paper/paper534.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G056",
+        "original_observation": "The diagonal folded corner, page overlap and pointed lower edge correspond.",
+        "original_paths": [
+          "paper/paper522.jpg",
+          "paper/paper534.jpg"
+        ],
+        "proposed_group_id": "proposed_bbba729d57c3",
+        "reason": "The diagonal folded corner, page overlap and pointed lower edge correspond.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper540.jpg",
+          "paper/paper56.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G057",
+        "original_observation": "The distinctive jagged tear through the red printed sheet and adjoining folded white portion match.",
+        "original_paths": [
+          "paper/paper540.jpg",
+          "paper/paper56.jpg"
+        ],
+        "proposed_group_id": "proposed_42cd9f7e1134",
+        "reason": "The distinctive jagged tear through the red printed sheet and adjoining folded white portion match.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper587.jpg",
+          "paper/paper588.jpg",
+          "paper/paper589.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G058",
+        "original_observation": "The red package has matching irregular cut/torn edges and crease positions across its printed face and white reverse.",
+        "original_paths": [
+          "paper/paper587.jpg",
+          "paper/paper588.jpg",
+          "paper/paper589.jpg"
+        ],
+        "proposed_group_id": "proposed_8ae4a2457c87",
+        "reason": "The red package has matching irregular cut/torn edges and crease positions across its printed face and white reverse.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper590.jpg",
+          "paper/paper591.jpg"
+        ],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G059",
+        "original_observation": "The clear wrapper and orange seam pieces are compatible, but the folded transparent portions do not establish a reliable matching tear across both views.",
+        "original_paths": [
+          "paper/paper590.jpg",
+          "paper/paper591.jpg"
+        ],
+        "proposed_group_id": "proposed_8cc355b1cef5",
+        "reason": "Compatible orange seam fragments and folded transparent portions suggest a possible wrapper-handling sequence; a matching tear is unverified.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G060",
+        "original_observation": "The box views share commercial printing and dimensions without a visible unique mark linking the two sides.",
+        "original_paths": [
+          "paper/paper593.jpg",
+          "paper/paper594.jpg"
+        ],
+        "proposed_group_id": "proposed_cee30586b660",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper68.jpg",
+          "paper/paper74.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G061",
+        "original_observation": "The same raised fold, overlapping flyer layers and curled lower edge appear with matching scene geometry.",
+        "original_paths": [
+          "paper/paper68.jpg",
+          "paper/paper74.jpg"
+        ],
+        "proposed_group_id": "proposed_225c026f63ac",
+        "reason": "The same raised fold, overlapping flyer layers and curled lower edge appear with matching scene geometry.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G062",
+        "original_observation": "The four red-cap bottle images include intact and deformed states; product design alone does not establish a common object across all members.",
+        "original_paths": [
+          "plastic/plastic10.jpg",
+          "plastic/plastic11.jpg",
+          "plastic/plastic153.jpg",
+          "plastic/plastic9.jpg"
+        ],
+        "proposed_group_id": "proposed_c5413801aded",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G063",
+        "original_observation": "The two water-bottle views show different label faces and deformation; a shared distinctive dent is not established.",
+        "original_paths": [
+          "plastic/plastic105.jpg",
+          "plastic/plastic350.jpg"
+        ],
+        "proposed_group_id": "proposed_e5fef224fa0a",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G064",
+        "original_observation": "The close-ups show a largely unmarked white container and red cap, so near-identical composition is insufficient on its own.",
+        "original_paths": [
+          "plastic/plastic118.jpg",
+          "plastic/plastic137.jpg"
+        ],
+        "proposed_group_id": "proposed_792f9b209acc",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G065",
+        "original_observation": "The blue-cap bottle views expose common manufactured features but no individual mark linking all four.",
+        "original_paths": [
+          "plastic/plastic124.jpg",
+          "plastic/plastic126.jpg",
+          "plastic/plastic127.jpg",
+          "plastic/plastic128.jpg"
+        ],
+        "proposed_group_id": "proposed_4ccb9a837a23",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G066",
+        "original_observation": "The clear molded package has no distinctive damage visible across the three views.",
+        "original_paths": [
+          "plastic/plastic13.jpg",
+          "plastic/plastic2.jpg",
+          "plastic/plastic3.jpg"
+        ],
+        "proposed_group_id": "proposed_355daa608bd0",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G067",
+        "original_observation": "The water-bottle shoulders and labels are similar, but the different crinkles/viewpoints do not establish one object.",
+        "original_paths": [
+          "plastic/plastic157.jpg",
+          "plastic/plastic57.jpg"
+        ],
+        "proposed_group_id": "proposed_a0bbc1b24771",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G068",
+        "original_observation": "The green bottle and printed branding match; no object-specific mark connects every view.",
+        "original_paths": [
+          "plastic/plastic171.jpg",
+          "plastic/plastic172.jpg",
+          "plastic/plastic173.jpg",
+          "plastic/plastic174.jpg"
+        ],
+        "proposed_group_id": "proposed_716bd237c40b",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G069",
+        "original_observation": "The proposed set mixes white-cap and open orange-cap views whose relationship needs checking; plain plastic parts do not establish one container sequence.",
+        "original_paths": [
+          "plastic/plastic176.jpg",
+          "plastic/plastic177.jpg",
+          "plastic/plastic178.jpg",
+          "plastic/plastic179.jpg",
+          "plastic/plastic180.jpg"
+        ],
+        "proposed_group_id": "proposed_56f33ab366d7",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G070",
+        "original_observation": "The juice-bottle views share standard labels and shape, without a distinctive mark established across all five.",
+        "original_paths": [
+          "plastic/plastic184.jpg",
+          "plastic/plastic185.jpg",
+          "plastic/plastic187.jpg",
+          "plastic/plastic188.jpg",
+          "plastic/plastic189.jpg"
+        ],
+        "proposed_group_id": "proposed_dc52755f6f09",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G071",
+        "original_observation": "The black supplement-container views share a product label and shape, without an individual feature visible in all three.",
+        "original_paths": [
+          "plastic/plastic196.jpg",
+          "plastic/plastic198.jpg",
+          "plastic/plastic199.jpg"
+        ],
+        "proposed_group_id": "proposed_7ad4256b75ca",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G072",
+        "original_observation": "The green bottle caps are standard manufactured parts; top-view similarity does not establish identity.",
+        "original_paths": [
+          "plastic/plastic256.jpg",
+          "plastic/plastic26.jpg"
+        ],
+        "proposed_group_id": "proposed_5af2b6eec28a",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G073",
+        "original_observation": "The bottle's label and molded ridges match, but rotated crinkles do not yet identify one physical bottle.",
+        "original_paths": [
+          "plastic/plastic293.jpg",
+          "plastic/plastic384.jpg"
+        ],
+        "proposed_group_id": "proposed_3a473e386466",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G074",
+        "original_observation": "The same water-bottle design appears in different rotations/deformations without a reliable unique feature.",
+        "original_paths": [
+          "plastic/plastic296.jpg",
+          "plastic/plastic358.jpg"
+        ],
+        "proposed_group_id": "proposed_7940f165c77d",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G075",
+        "original_observation": "The black packaged tray and opened wrapping may be related, but the full three-view connection is not established beyond the product form.",
+        "original_paths": [
+          "plastic/plastic448.jpg",
+          "plastic/plastic449.jpg",
+          "plastic/plastic450.jpg"
+        ],
+        "proposed_group_id": "proposed_32d06b5b2e33",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "plastic/plastic452.jpg",
+          "plastic/plastic453.jpg",
+          "plastic/plastic454.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G076",
+        "original_observation": "The crushed black tray has a matching irregular split, raised flaps and bent rim across the three orientations.",
+        "original_paths": [
+          "plastic/plastic452.jpg",
+          "plastic/plastic453.jpg",
+          "plastic/plastic454.jpg"
+        ],
+        "proposed_group_id": "proposed_4b7cc7853222",
+        "reason": "The crushed black tray has a matching irregular split, raised flaps and bent rim across the three orientations.",
+        "treatment": "accept_visually_supported"
+      },
+      {
+        "accepted_paths": [
+          "plastic/plastic455.jpg",
+          "plastic/plastic456.jpg",
+          "plastic/plastic457.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G077",
+        "original_observation": "The padded-mailer layers are compatible, but correspondence between the white face, silver face and torn state is not fully established.",
+        "original_paths": [
+          "plastic/plastic455.jpg",
+          "plastic/plastic456.jpg",
+          "plastic/plastic457.jpg"
+        ],
+        "proposed_group_id": "proposed_945871af55d9",
+        "reason": "Compatible padded-mailer layers and a torn state suggest a possible handling sequence; full cross-surface correspondence is uncertain.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G078",
+        "original_observation": "The Evian bottle views include close-ups and partial crops without a shared individual mark across all five.",
+        "original_paths": [
+          "plastic/plastic458.jpg",
+          "plastic/plastic473.jpg",
+          "plastic/plastic474.jpg",
+          "plastic/plastic475.jpg",
+          "plastic/plastic476.jpg"
+        ],
+        "proposed_group_id": "proposed_0fa8ef9edbd2",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G079",
+        "original_observation": "The lychee-wrapper design matches, but front, back and torn states need a shared damage feature to establish one wrapper.",
+        "original_paths": [
+          "plastic/plastic459.jpg",
+          "plastic/plastic460.jpg",
+          "plastic/plastic461.jpg"
+        ],
+        "proposed_group_id": "proposed_bf96a8dc1a39",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G080",
+        "original_observation": "The green candy package may form a handling sequence; matching product print and an opening alone do not establish all three views as one object.",
+        "original_paths": [
+          "plastic/plastic462.jpg",
+          "plastic/plastic463.jpg",
+          "plastic/plastic464.jpg"
+        ],
+        "proposed_group_id": "proposed_3874d7985079",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G081",
+        "original_observation": "The flat printed wrapper and crumpled foil views lack a demonstrated common unique feature.",
+        "original_paths": [
+          "plastic/plastic465.jpg",
+          "plastic/plastic466.jpg",
+          "plastic/plastic467.jpg"
+        ],
+        "proposed_group_id": "proposed_fd7c63b97b19",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G082",
+        "original_observation": "The green bottle sequence mixes intact, base and crushed views; common branding and shape do not establish all five as one object.",
+        "original_paths": [
+          "plastic/plastic468.jpg",
+          "plastic/plastic469.jpg",
+          "plastic/plastic470.jpg",
+          "plastic/plastic471.jpg",
+          "plastic/plastic472.jpg"
+        ],
+        "proposed_group_id": "proposed_e49f6aff2be7",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G083",
+        "original_observation": "The Oreo package's front and back share product design, without established matching damage or an individual mark.",
+        "original_paths": [
+          "plastic/plastic477.jpg",
+          "plastic/plastic478.jpg"
+        ],
+        "proposed_group_id": "proposed_2550866226c9",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G084",
+        "original_observation": "The transparent bag views have different visible labels/sides and no established unique fold or tear linking them.",
+        "original_paths": [
+          "plastic/plastic479.jpg",
+          "plastic/plastic480.jpg"
+        ],
+        "proposed_group_id": "proposed_c4789c9ef83b",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G085",
+        "original_observation": "The small printed packet may be folded in the second image, but repeated branding alone does not confirm the same packet.",
+        "original_paths": [
+          "plastic/plastic481.jpg",
+          "plastic/plastic482.jpg"
+        ],
+        "proposed_group_id": "proposed_42a3eec25046",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G086",
+        "original_observation": "The five snack-wrapper views share design but mix folded, opened and interior surfaces; complete identity is not established.",
+        "original_paths": [
+          "trash/trash109.jpg",
+          "trash/trash110.jpg",
+          "trash/trash111.jpg",
+          "trash/trash112.jpg",
+          "trash/trash113.jpg"
+        ],
+        "proposed_group_id": "proposed_7f3a64336685",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "G087",
+        "original_observation": "The wrapper's front, reverse and opened interior may be related, but a distinctive feature connecting every member is not established.",
+        "original_paths": [
+          "trash/trash114.jpg",
+          "trash/trash115.jpg",
+          "trash/trash116.jpg"
+        ],
+        "proposed_group_id": "proposed_27a4fedf3f7d",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G088",
+        "original_observation": "The Subway wrapper print repeats widely and the different crumples do not establish one physical sheet.",
+        "original_paths": [
+          "trash/trash117.jpg",
+          "trash/trash118.jpg"
+        ],
+        "proposed_group_id": "proposed_dbd68af59d5e",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G089",
+        "original_observation": "The food-cup views share standard shape and printed design without a visible individual mark.",
+        "original_paths": [
+          "trash/trash120.jpg",
+          "trash/trash121.jpg"
+        ],
+        "proposed_group_id": "proposed_26b3cdb60eb9",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G090",
+        "original_observation": "The two wrapper views differ strongly in size/framing and visible material/design; the proposed front/reverse relationship is unsupported by a shared mark.",
+        "original_paths": [
+          "trash/trash122.jpg",
+          "trash/trash123.jpg"
+        ],
+        "proposed_group_id": "proposed_022c12ca02f4",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "trash/trash124.jpg",
+          "trash/trash125.jpg",
+          "trash/trash126.jpg"
+        ],
+        "assigned_subsets": [
+          "test"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G091",
+        "original_observation": "The cardboard pack, foil blisters and clear tray could be a related unpacking sequence, but their provenance and exact membership are unverified.",
+        "original_paths": [
+          "trash/trash124.jpg",
+          "trash/trash125.jpg",
+          "trash/trash126.jpg"
+        ],
+        "proposed_group_id": "proposed_ed9962eb8fe9",
+        "reason": "The pack, foil blisters, and tray may belong to one unpacking sequence; shared capture provenance remains unverified.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G092",
+        "original_observation": "The lip-balm tube has common product features without visible individual damage linking both views.",
+        "original_paths": [
+          "trash/trash127.jpg",
+          "trash/trash128.jpg"
+        ],
+        "proposed_group_id": "proposed_fd004968e842",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "trash/trash130.jpg",
+          "trash/trash131.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G093",
+        "original_observation": "The two reverse views closely match, but the front view lacks a sufficiently distinctive shared feature to confirm the full three-image group.",
+        "original_paths": [
+          "trash/trash129.jpg",
+          "trash/trash130.jpg",
+          "trash/trash131.jpg"
+        ],
+        "proposed_group_id": "proposed_98a4f230a84a",
+        "reason": "The two rear views share the lower-seam deformation, dark mark, and closely corresponding framing. The front view is not linked solely by product branding.",
+        "treatment": "accept_supported_subgroup_only"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G094",
+        "original_observation": "The floss case's open and closed views show a standard manufactured shape without an individual identifier.",
+        "original_paths": [
+          "trash/trash132.jpg",
+          "trash/trash133.jpg"
+        ],
+        "proposed_group_id": "proposed_481211033f2a",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [
+          "trash/trash135.jpg",
+          "trash/trash136.jpg",
+          "trash/trash137.jpg"
+        ],
+        "assigned_subsets": [
+          "test"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G095",
+        "original_observation": "The torn padded envelope has a plausible front/reverse link, but the crumpled third view obscures the tear needed to establish all members.",
+        "original_paths": [
+          "trash/trash135.jpg",
+          "trash/trash136.jpg",
+          "trash/trash137.jpg"
+        ],
+        "proposed_group_id": "proposed_a58eead6e9fe",
+        "reason": "The torn envelope has a plausible front/reverse link and a crumpled view that obscures the tear; keep the possible handling sequence together.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "G096",
+        "original_observation": "The three noodle cups share commercial printing, but distinct object identity is not established by that packaging alone.",
+        "original_paths": [
+          "trash/trash50.jpg",
+          "trash/trash60.jpg",
+          "trash/trash87.jpg"
+        ],
+        "proposed_group_id": "proposed_5ee1ed80fda9",
+        "reason": "Existing evidence does not justify this full membership. Retain all images; do not group on shared design or generic appearance. Unresolved identity remains a leakage limitation.",
+        "treatment": "do_not_accept_full_proposal"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0004",
+        "original_observation": "Similar dark cardboard texture and lighting, but insufficient distinctive object detail.",
+        "original_paths": [
+          "cardboard/cardboard386.jpg",
+          "cardboard/cardboard72.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0007",
+        "original_observation": "Similar dark cardboard texture and crop, but insufficient distinctive object detail.",
+        "original_paths": [
+          "cardboard/cardboard15.jpg",
+          "cardboard/cardboard361.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0014",
+        "original_observation": "Top views of cans; identity cannot be established from these views.",
+        "original_paths": [
+          "metal/metal155.jpg",
+          "metal/metal6.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [
+          "metal/metal165.jpg",
+          "metal/metal166.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0029",
+        "original_observation": "Foil at different stages of crumpling; possible same object but uncertain.",
+        "original_paths": [
+          "metal/metal165.jpg",
+          "metal/metal166.jpg"
+        ],
+        "reason": "The review describes foil at different stages of crumpling, a plausible same-object handling sequence with uncertain identity.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0049",
+        "original_observation": "Top view versus crushed can; identity cannot be established.",
+        "original_paths": [
+          "metal/metal148.jpg",
+          "metal/metal160.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0079",
+        "original_observation": "Plain envelope faces; reverse sides may belong together, but identifying detail is insufficient.",
+        "original_paths": [
+          "paper/paper361.jpg",
+          "paper/paper560.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0083",
+        "original_observation": "Clear clamshell containers may be related; different views obscure distinctive details.",
+        "original_paths": [
+          "plastic/plastic17.jpg",
+          "plastic/plastic275.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0087",
+        "original_observation": "Plain envelope views may be related; insufficient identifying detail.",
+        "original_paths": [
+          "paper/paper255.jpg",
+          "paper/paper277.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0092",
+        "original_observation": "Stemware side/top views may be related; shape alone does not establish identity.",
+        "original_paths": [
+          "glass/glass183.jpg",
+          "glass/glass5.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0095",
+        "original_observation": "Unmarked cardboard close-up cannot be confidently linked to the marked box.",
+        "original_paths": [
+          "cardboard/cardboard10.jpg",
+          "cardboard/cardboard2.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0100",
+        "original_observation": "Plain envelope faces may be related; insufficient identifying detail.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper497.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0106",
+        "original_observation": "Plain envelope front/back views may be related; insufficient identifying detail.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper277.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0116",
+        "original_observation": "Stemware side/top views may be related; identity unresolved.",
+        "original_paths": [
+          "glass/glass188.jpg",
+          "glass/glass5.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0117",
+        "original_observation": "Stemware top views may be related; identity unresolved.",
+        "original_paths": [
+          "glass/glass3.jpg",
+          "glass/glass5.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "validation"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0130",
+        "original_observation": "Generic envelope faces may be opposite sides of one object.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0131",
+        "original_observation": "Written sheet and unmarked sheet may be front/back; identity unresolved.",
+        "original_paths": [
+          "paper/paper204.jpg",
+          "paper/paper477.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0139",
+        "original_observation": "Handwritten sheets need higher-resolution comparison of the writing.",
+        "original_paths": [
+          "paper/paper249.jpg",
+          "paper/paper419.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0151",
+        "original_observation": "Broken glass and intact stemware may be related, but this is not established.",
+        "original_paths": [
+          "glass/glass147.jpg",
+          "glass/glass183.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0154",
+        "original_observation": "Stemware side/top views may be related; identity unresolved.",
+        "original_paths": [
+          "glass/glass2.jpg",
+          "glass/glass5.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0157",
+        "original_observation": "Plain envelope views may be related; distinctive object identity is unresolved.",
+        "original_paths": [
+          "paper/paper119.jpg",
+          "paper/paper329.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [
+          "paper/paper277.jpg",
+          "paper/paper552.jpg"
+        ],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0160",
+        "original_observation": "Envelope versus torn envelope; possible before/after handling.",
+        "original_paths": [
+          "paper/paper277.jpg",
+          "paper/paper552.jpg"
+        ],
+        "reason": "The review describes an envelope and a torn envelope as a possible before/after handling pair; keep the pair together without claiming confirmed identity.",
+        "treatment": "accept_conservative_uncertain"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0169",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper54.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0175",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper414.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0176",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper54.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0180",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard346.jpg",
+          "cardboard/cardboard83.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0194",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper255.jpg",
+          "paper/paper54.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0197",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper498.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0203",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper277.jpg",
+          "paper/paper54.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0205",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper552.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0208",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper493.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0209",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper552.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0212",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard130.jpg",
+          "cardboard/cardboard325.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0215",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard75.jpg",
+          "cardboard/cardboard83.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0218",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper361.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0219",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper143.jpg",
+          "paper/paper560.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0221",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper277.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0225",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard2.jpg",
+          "cardboard/cardboard221.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0238",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper414.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0244",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard221.jpg",
+          "cardboard/cardboard83.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0253",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard249.jpg",
+          "cardboard/cardboard83.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0255",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard311.jpg",
+          "cardboard/cardboard83.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0261",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper493.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0267",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard221.jpg",
+          "cardboard/cardboard311.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0280",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper277.jpg",
+          "paper/paper493.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0281",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper347.jpg",
+          "paper/paper497.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0284",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper383.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0285",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper493.jpg",
+          "paper/paper54.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0286",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper54.jpg",
+          "paper/paper552.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0290",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard221.jpg",
+          "cardboard/cardboard75.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0295",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard2.jpg",
+          "cardboard/cardboard83.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0302",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper383.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0303",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper498.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0304",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper119.jpg",
+          "paper/paper493.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0310",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard221.jpg",
+          "cardboard/cardboard249.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0318",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper414.jpg",
+          "paper/paper552.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0319",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper557.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0330",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper560.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0334",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "cardboard/cardboard208.jpg",
+          "cardboard/cardboard83.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0341",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper110.jpg",
+          "paper/paper143.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0343",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper322.jpg",
+          "paper/paper493.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "train"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0344",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper361.jpg",
+          "paper/paper557.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "test",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0345",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper361.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0347",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper493.jpg",
+          "paper/paper552.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train"
+        ],
+        "crosses_subsets": false,
+        "evidence_id": "candidate_0348",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper498.jpg",
+          "paper/paper560.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      },
+      {
+        "accepted_paths": [],
+        "assigned_subsets": [
+          "train",
+          "validation"
+        ],
+        "crosses_subsets": true,
+        "evidence_id": "candidate_0357",
+        "original_observation": "Low-detail cardboard or envelope views; physical identity cannot be established from thumbnails.",
+        "original_paths": [
+          "paper/paper560.jpg",
+          "paper/paper582.jpg"
+        ],
+        "reason": "Insufficient evidence beyond generic appearance or hash similarity; retain eligibility and record residual uncertainty.",
+        "treatment": "leave_unresolved_without_group_link"
+      }
+    ],
+    "largest_related_group": 4,
+    "policy": "recorded_visual_evidence_with_bounded_conservative_links_v1",
+    "related_group_count": 43,
+    "related_groups": [
+      {
+        "evidence_ids": [
+          "G001"
+        ],
+        "group_id": "related_cd1e4de256ac6a9f",
+        "label": "cardboard",
+        "paths": [
+          "cardboard/cardboard130.jpg",
+          "cardboard/cardboard131.jpg",
+          "cardboard/cardboard132.jpg",
+          "cardboard/cardboard134.jpg"
+        ],
+        "size": 4,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G002"
+        ],
+        "group_id": "related_c40f7739b49a9003",
+        "label": "cardboard",
+        "paths": [
+          "cardboard/cardboard142.jpg",
+          "cardboard/cardboard143.jpg",
+          "cardboard/cardboard144.jpg",
+          "cardboard/cardboard145.jpg"
+        ],
+        "size": 4,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G019"
+        ],
+        "group_id": "related_83ba221c4861c352",
+        "label": "glass",
+        "paths": [
+          "glass/glass304.jpg",
+          "glass/glass404.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G020"
+        ],
+        "group_id": "related_79f80ba32652cf78",
+        "label": "metal",
+        "paths": [
+          "metal/metal11.jpg",
+          "metal/metal221.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G021"
+        ],
+        "group_id": "related_60a65f05cc7e1bbf",
+        "label": "metal",
+        "paths": [
+          "metal/metal120.jpg",
+          "metal/metal50.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G022"
+        ],
+        "group_id": "related_0ce34dd9351f666f",
+        "label": "metal",
+        "paths": [
+          "metal/metal122.jpg",
+          "metal/metal57.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G023"
+        ],
+        "group_id": "related_b06d97c28c2d7bcc",
+        "label": "metal",
+        "paths": [
+          "metal/metal141.jpg",
+          "metal/metal390.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "candidate_0029"
+        ],
+        "group_id": "related_c513b29aaf1a6639",
+        "label": "metal",
+        "paths": [
+          "metal/metal165.jpg",
+          "metal/metal166.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G025"
+        ],
+        "group_id": "related_7983fcc8d9d0575d",
+        "label": "metal",
+        "paths": [
+          "metal/metal169.jpg",
+          "metal/metal170.jpg",
+          "metal/metal171.jpg"
+        ],
+        "size": 3,
+        "subset": "test"
+      },
+      {
+        "evidence_ids": [
+          "G028"
+        ],
+        "group_id": "related_a0fee5f012d4c340",
+        "label": "metal",
+        "paths": [
+          "metal/metal178.jpg",
+          "metal/metal179.jpg",
+          "metal/metal182.jpg",
+          "metal/metal183.jpg"
+        ],
+        "size": 4,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G029"
+        ],
+        "group_id": "related_45b788f97ac2d4a1",
+        "label": "metal",
+        "paths": [
+          "metal/metal187.jpg",
+          "metal/metal188.jpg",
+          "metal/metal189.jpg"
+        ],
+        "size": 3,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G032"
+        ],
+        "group_id": "related_f08b3615e9d8ccbb",
+        "label": "metal",
+        "paths": [
+          "metal/metal394.jpg",
+          "metal/metal76.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G034"
+        ],
+        "group_id": "related_3bae4b705f5ec1a5",
+        "label": "paper",
+        "paths": [
+          "paper/paper101.jpg",
+          "paper/paper108.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G035"
+        ],
+        "group_id": "related_0715f0739b2a689b",
+        "label": "paper",
+        "paths": [
+          "paper/paper123.jpg",
+          "paper/paper547.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G036"
+        ],
+        "group_id": "related_2461a6321dcb892c",
+        "label": "paper",
+        "paths": [
+          "paper/paper135.jpg",
+          "paper/paper496.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G037"
+        ],
+        "group_id": "related_c8ec10b563d8b09b",
+        "label": "paper",
+        "paths": [
+          "paper/paper136.jpg",
+          "paper/paper148.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G038"
+        ],
+        "group_id": "related_30399948599c6cd4",
+        "label": "paper",
+        "paths": [
+          "paper/paper147.jpg",
+          "paper/paper99.jpg"
+        ],
+        "size": 2,
+        "subset": "test"
+      },
+      {
+        "evidence_ids": [
+          "G039"
+        ],
+        "group_id": "related_ba4ce8e242a1c3d6",
+        "label": "paper",
+        "paths": [
+          "paper/paper152.jpg",
+          "paper/paper392.jpg"
+        ],
+        "size": 2,
+        "subset": "test"
+      },
+      {
+        "evidence_ids": [
+          "G040"
+        ],
+        "group_id": "related_f538f16207e67bf9",
+        "label": "paper",
+        "paths": [
+          "paper/paper176.jpg",
+          "paper/paper549.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G041"
+        ],
+        "group_id": "related_fd74eb652614ab44",
+        "label": "paper",
+        "paths": [
+          "paper/paper180.jpg",
+          "paper/paper284.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G042"
+        ],
+        "group_id": "related_0064ee55a595570d",
+        "label": "paper",
+        "paths": [
+          "paper/paper185.jpg",
+          "paper/paper390.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G043"
+        ],
+        "group_id": "related_902f8806512db932",
+        "label": "paper",
+        "paths": [
+          "paper/paper2.jpg",
+          "paper/paper40.jpg"
+        ],
+        "size": 2,
+        "subset": "test"
+      },
+      {
+        "evidence_ids": [
+          "G045"
+        ],
+        "group_id": "related_4dca9d335e1a31d3",
+        "label": "paper",
+        "paths": [
+          "paper/paper240.jpg",
+          "paper/paper306.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G046"
+        ],
+        "group_id": "related_46ef433b94e0a8ed",
+        "label": "paper",
+        "paths": [
+          "paper/paper246.jpg",
+          "paper/paper349.jpg"
+        ],
+        "size": 2,
+        "subset": "test"
+      },
+      {
+        "evidence_ids": [
+          "G048"
+        ],
+        "group_id": "related_33275012cd662136",
+        "label": "paper",
+        "paths": [
+          "paper/paper265.jpg",
+          "paper/paper408.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "candidate_0160"
+        ],
+        "group_id": "related_9ddd5081657979ad",
+        "label": "paper",
+        "paths": [
+          "paper/paper277.jpg",
+          "paper/paper552.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G050"
+        ],
+        "group_id": "related_e0922d771c9c3016",
+        "label": "paper",
+        "paths": [
+          "paper/paper305.jpg",
+          "paper/paper308.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G051"
+        ],
+        "group_id": "related_4f817125f15c17ee",
+        "label": "paper",
+        "paths": [
+          "paper/paper314.jpg",
+          "paper/paper53.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G052"
+        ],
+        "group_id": "related_aedd4f2d3bda683b",
+        "label": "paper",
+        "paths": [
+          "paper/paper345.jpg",
+          "paper/paper451.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G053"
+        ],
+        "group_id": "related_0d8feb5035f4a885",
+        "label": "paper",
+        "paths": [
+          "paper/paper39.jpg",
+          "paper/paper467.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G054"
+        ],
+        "group_id": "related_50f8e87bcca3f7da",
+        "label": "paper",
+        "paths": [
+          "paper/paper457.jpg",
+          "paper/paper553.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G044"
+        ],
+        "group_id": "related_01843a423008388c",
+        "label": "paper",
+        "paths": [
+          "paper/paper459.jpg",
+          "paper/paper466.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G055"
+        ],
+        "group_id": "related_7fd9e5bb6b56080b",
+        "label": "paper",
+        "paths": [
+          "paper/paper474.jpg",
+          "paper/paper89.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G056"
+        ],
+        "group_id": "related_bbba729d57c31e1f",
+        "label": "paper",
+        "paths": [
+          "paper/paper522.jpg",
+          "paper/paper534.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G057"
+        ],
+        "group_id": "related_42cd9f7e1134434c",
+        "label": "paper",
+        "paths": [
+          "paper/paper540.jpg",
+          "paper/paper56.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G058"
+        ],
+        "group_id": "related_8ae4a2457c87ecb8",
+        "label": "paper",
+        "paths": [
+          "paper/paper587.jpg",
+          "paper/paper588.jpg",
+          "paper/paper589.jpg"
+        ],
+        "size": 3,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G059"
+        ],
+        "group_id": "related_8cc355b1cef5955a",
+        "label": "paper",
+        "paths": [
+          "paper/paper590.jpg",
+          "paper/paper591.jpg"
+        ],
+        "size": 2,
+        "subset": "validation"
+      },
+      {
+        "evidence_ids": [
+          "G061"
+        ],
+        "group_id": "related_225c026f63acc361",
+        "label": "paper",
+        "paths": [
+          "paper/paper68.jpg",
+          "paper/paper74.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G076"
+        ],
+        "group_id": "related_4b7cc785322211ce",
+        "label": "plastic",
+        "paths": [
+          "plastic/plastic452.jpg",
+          "plastic/plastic453.jpg",
+          "plastic/plastic454.jpg"
+        ],
+        "size": 3,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G077"
+        ],
+        "group_id": "related_945871af55d9c840",
+        "label": "plastic",
+        "paths": [
+          "plastic/plastic455.jpg",
+          "plastic/plastic456.jpg",
+          "plastic/plastic457.jpg"
+        ],
+        "size": 3,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G091"
+        ],
+        "group_id": "related_ed9962eb8fe96c75",
+        "label": "trash",
+        "paths": [
+          "trash/trash124.jpg",
+          "trash/trash125.jpg",
+          "trash/trash126.jpg"
+        ],
+        "size": 3,
+        "subset": "test"
+      },
+      {
+        "evidence_ids": [
+          "G093"
+        ],
+        "group_id": "related_0a2d2581e78a1299",
+        "label": "trash",
+        "paths": [
+          "trash/trash130.jpg",
+          "trash/trash131.jpg"
+        ],
+        "size": 2,
+        "subset": "train"
+      },
+      {
+        "evidence_ids": [
+          "G095"
+        ],
+        "group_id": "related_a58eead6e9fea1b1",
+        "label": "trash",
+        "paths": [
+          "trash/trash135.jpg",
+          "trash/trash136.jpg",
+          "trash/trash137.jpg"
+        ],
+        "size": 3,
+        "subset": "test"
+      }
+    ],
+    "related_image_count": 99,
+    "reviewed_coverage_images": 362,
+    "singleton_count": 2422,
+    "total_group_count": 2465,
+    "unaccepted_relationships_crossing_subsets": {
+      "broad_proposals": 38,
+      "candidate_pairs": 44
+    },
+    "unresolved_relationship_coverage_images": 270
+  },
+  "input_sha256": {
+    "manifests/archive/data_review_v1/group_review_assessments.json": "e4967a92f63e8c26fdc3a108957cb7089c872c4863a61eafc83763767b6ea229",
+    "manifests/archive/data_review_v1/near_duplicate_review.csv": "1d4f1d4cf33b8353d13148b9468ecdee8b08957043cb992330ba8ccb91e5f5c2",
+    "manifests/archive/data_review_v1/related_groups.csv": "6eb8113ed352764b360b0358ebfdf6a6b977ded34cc3e33d82f048b8b98039c1",
+    "manifests/duplicate_review.csv": "51b4453bfe6bf8477714201ab2cfb4e861a9afe037a7494e4f6cf45600eb05be",
+    "manifests/image_inventory.csv": "971f3f1e03a0950c94b10c39b98bcb193be71740fecf22af5ec5b0b7f85f870b",
+    "manifests/integrity_before.json": "e0bd604ccb8baeb70557a8f79acae61c2ec14092c0516c7c9498365d4bc6c61b",
+    "manifests/source_checksums_before.csv": "1743e39fb79ddd4d5f91721a3cb65d72c35d71ac636eb873c888752b6c302749",
+    "src/data_preparation.py": "e6fe26c12c4dc74258dfcf3662725f67fc37f33492b91ebf9ee247f9ac9f1739",
+    "src/data_splitting.py": "51b9ff4e9ac400f0cf37eb2182a438201352e740f0f896354dd07f97477e1a2d"
+  },
+  "limitations": [
+    "Accepted visual and conservative relationships are not independently verified physical-object identities.",
+    "Broad unverified families and generic look-alike pairs were not automatically grouped. Their residual relationships may cross subsets; singleton IDs do not certify independence.",
+    "Some unaccepted broad proposals contain plausible subrelationships whose boundaries are unestablished. The finite existing review is not exhaustive and cannot guarantee absence of all leakage.",
+    "Class/global quotas are rounded to whole images. Larger groups in a future dataset could make these exact quotas infeasible; this implementation then stops rather than splitting a group.",
+    "Earlier pre-split exploration inspected source images; the test holdout begins at this saved assignment. No test images are used for subsequent inspection, model selection, or tuning."
+  ],
+  "manifest_format": "UTF-8 CSV; LF; rows sorted by source-relative path; header path,label,subset,group_id",
+  "manifest_path": "manifests/split_manifest.csv",
+  "manifest_sha256": "b1e09badb3d1347f7b2d934c5824b10daa7b57f5a4e9c06be89d05b56659546f",
+  "python_version": "3.13.16",
+  "rng": "Python random.Random(seed=42), sorted inputs, fixed class/subset order",
+  "schema_version": 1,
+  "source_images": 2527,
+  "source_integrity_after": {
+    "added_paths": [],
+    "archive_sha256_after": "0bf472790f8b20e5c950d5b5012a9d38af0d3392efd65f8ce171334fc16b07c2",
+    "archive_sha256_before": "0bf472790f8b20e5c950d5b5012a9d38af0d3392efd65f8ce171334fc16b07c2",
+    "archive_unchanged": true,
+    "changed_paths": [],
+    "inventory_sha256_after": "1743e39fb79ddd4d5f91721a3cb65d72c35d71ac636eb873c888752b6c302749",
+    "inventory_sha256_before": "1743e39fb79ddd4d5f91721a3cb65d72c35d71ac636eb873c888752b6c302749",
+    "missing_paths": [],
+    "original_data_unchanged": true,
+    "source_directories_unchanged": true,
+    "source_file_count_after": 2528,
+    "source_file_count_before": 2528,
+    "source_files_unchanged": true
+  },
+  "source_integrity_before": {
+    "added_paths": [],
+    "archive_sha256_after": "0bf472790f8b20e5c950d5b5012a9d38af0d3392efd65f8ce171334fc16b07c2",
+    "archive_sha256_before": "0bf472790f8b20e5c950d5b5012a9d38af0d3392efd65f8ce171334fc16b07c2",
+    "archive_unchanged": true,
+    "changed_paths": [],
+    "inventory_sha256_after": "1743e39fb79ddd4d5f91721a3cb65d72c35d71ac636eb873c888752b6c302749",
+    "inventory_sha256_before": "1743e39fb79ddd4d5f91721a3cb65d72c35d71ac636eb873c888752b6c302749",
+    "missing_paths": [],
+    "original_data_unchanged": true,
+    "source_directories_unchanged": true,
+    "source_file_count_after": 2528,
+    "source_file_count_before": 2528,
+    "source_files_unchanged": true
+  },
+  "source_root": "data/dataset-resized",
+  "status": "created_and_verified",
+  "subset_manifest_sha256": {
+    "test": "184290022350301b506b26c2d9aac08c90d721543d794ede3199d04dc25e0e84",
+    "train": "5e6175cf2ee3f13085504d5b06f294a6a518f455b5b5f4c7bd6b551f7b6f26de",
+    "validation": "19a7ad2f6bfd257b4b28b277bb090dec14d888eccff417d20bf542b6306a880d"
+  },
+  "subset_order": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "target_counts": {
+    "test": 378,
+    "train": 1765,
+    "validation": 378
+  },
+  "test_policy": "Reserved and unused for model evaluation or tuning throughout the homework; only manifest statistics and byte-level integrity checks are permitted.",
+  "verification_before_write": {
+    "accepted_groups_stay_in_one_subset": true,
+    "class_counts_match_targets": true,
+    "exactly_2521_eligible_rows": true,
+    "group_identifiers_match_evidence": true,
+    "original_labels_preserved": true,
+    "seed_42_reproduces_every_assignment": true,
+    "unique_image_paths": true,
+    "valid_subset_names": true
+  }
+}

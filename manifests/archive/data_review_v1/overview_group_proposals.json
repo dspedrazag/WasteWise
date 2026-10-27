@@ -1,0 +1,692 @@
+[
+  {
+    "proposal_id": "overview_001",
+    "paths": [
+      "cardboard/cardboard130.jpg",
+      "cardboard/cardboard131.jpg",
+      "cardboard/cardboard132.jpg",
+      "cardboard/cardboard134.jpg"
+    ],
+    "evidence": "Matching HARIBO printing and orange sticker on a brown carton in different orientations.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_002",
+    "paths": [
+      "cardboard/cardboard142.jpg",
+      "cardboard/cardboard143.jpg",
+      "cardboard/cardboard144.jpg",
+      "cardboard/cardboard145.jpg"
+    ],
+    "evidence": "Matching torn brown/white carton fragment photographed from different sides.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_003",
+    "paths": [
+      "cardboard/cardboard146.jpg",
+      "cardboard/cardboard147.jpg",
+      "cardboard/cardboard148.jpg",
+      "cardboard/cardboard149.jpg"
+    ],
+    "evidence": "Matching brown shipping carton and white address label; open and rotated views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_004",
+    "paths": [
+      "cardboard/cardboard161.jpg",
+      "cardboard/cardboard162.jpg",
+      "cardboard/cardboard163.jpg"
+    ],
+    "evidence": "Matching blue Chobani multipack printing in different views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_005",
+    "paths": [
+      "cardboard/cardboard166.jpg",
+      "cardboard/cardboard167.jpg",
+      "cardboard/cardboard168.jpg",
+      "cardboard/cardboard169.jpg",
+      "cardboard/cardboard170.jpg",
+      "cardboard/cardboard171.jpg",
+      "cardboard/cardboard172.jpg",
+      "cardboard/cardboard173.jpg",
+      "cardboard/cardboard174.jpg",
+      "cardboard/cardboard175.jpg",
+      "cardboard/cardboard176.jpg",
+      "cardboard/cardboard177.jpg",
+      "cardboard/cardboard178.jpg",
+      "cardboard/cardboard179.jpg"
+    ],
+    "evidence": "Green Silk multipack carton in open, flattened and torn states; conservative packaging-family proposal.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_006",
+    "paths": [
+      "cardboard/cardboard189.jpg",
+      "cardboard/cardboard190.jpg",
+      "cardboard/cardboard191.jpg",
+      "cardboard/cardboard192.jpg",
+      "cardboard/cardboard193.jpg",
+      "cardboard/cardboard194.jpg",
+      "cardboard/cardboard195.jpg",
+      "cardboard/cardboard196.jpg",
+      "cardboard/cardboard197.jpg",
+      "cardboard/cardboard198.jpg",
+      "cardboard/cardboard199.jpg",
+      "cardboard/cardboard200.jpg",
+      "cardboard/cardboard201.jpg",
+      "cardboard/cardboard202.jpg",
+      "cardboard/cardboard203.jpg",
+      "cardboard/cardboard204.jpg",
+      "cardboard/cardboard205.jpg"
+    ],
+    "evidence": "Purple multipack carton in open, flattened and folded states; conservative packaging-family proposal.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_007",
+    "paths": [
+      "glass/glass169.jpg",
+      "glass/glass170.jpg",
+      "glass/glass171.jpg",
+      "glass/glass172.jpg",
+      "glass/glass173.jpg",
+      "glass/glass175.jpg"
+    ],
+    "evidence": "Small clear jar with gold lid; proposed closed/open/top-view group.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_008",
+    "paths": [
+      "glass/glass185.jpg",
+      "glass/glass186.jpg",
+      "glass/glass190.jpg",
+      "glass/glass192.jpg",
+      "glass/glass199.jpg"
+    ],
+    "evidence": "Jar with dark/gold lid and orange price sticker seen in multiple views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_009",
+    "paths": [
+      "glass/glass193.jpg",
+      "glass/glass194.jpg"
+    ],
+    "evidence": "Matching blue drinking tumbler, top and side views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_010",
+    "paths": [
+      "glass/glass203.jpg",
+      "glass/glass204.jpg",
+      "glass/glass205.jpg",
+      "glass/glass206.jpg",
+      "glass/glass210.jpg"
+    ],
+    "evidence": "Matching clear vase-like glass object in several orientations.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_011",
+    "paths": [
+      "glass/glass211.jpg",
+      "glass/glass212.jpg",
+      "glass/glass213.jpg",
+      "glass/glass214.jpg"
+    ],
+    "evidence": "Matching tall clear drinking vessel, side and top views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_012",
+    "paths": [
+      "glass/glass207.jpg",
+      "glass/glass208.jpg",
+      "glass/glass209.jpg"
+    ],
+    "evidence": "Matching clear rectangular spirit bottle with white cap and label.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_013",
+    "paths": [
+      "glass/glass217.jpg",
+      "glass/glass218.jpg",
+      "glass/glass219.jpg"
+    ],
+    "evidence": "Matching clear juice bottle with black cap and orange fruit label.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_014",
+    "paths": [
+      "glass/glass263.jpg",
+      "glass/glass264.jpg",
+      "glass/glass265.jpg"
+    ],
+    "evidence": "Matching clear Ciroc bottle with orange graphic.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_015",
+    "paths": [
+      "glass/glass266.jpg",
+      "glass/glass267.jpg",
+      "glass/glass268.jpg"
+    ],
+    "evidence": "Matching green bottle with red/yellow label.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_016",
+    "paths": [
+      "metal/metal169.jpg",
+      "metal/metal170.jpg",
+      "metal/metal171.jpg"
+    ],
+    "evidence": "Matching round foil tray in multiple views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_017",
+    "paths": [
+      "metal/metal172.jpg",
+      "metal/metal173.jpg"
+    ],
+    "evidence": "Matching small rectangular foil tray, top and bottom.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_018",
+    "paths": [
+      "metal/metal5.jpg",
+      "metal/metal175.jpg",
+      "metal/metal176.jpg",
+      "metal/metal177.jpg"
+    ],
+    "evidence": "Matching larger rectangular foil tray and lining.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_019",
+    "paths": [
+      "metal/metal178.jpg",
+      "metal/metal179.jpg",
+      "metal/metal182.jpg",
+      "metal/metal183.jpg"
+    ],
+    "evidence": "Matching gold Coors can in multiple orientations.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_020",
+    "paths": [
+      "metal/metal187.jpg",
+      "metal/metal188.jpg",
+      "metal/metal189.jpg"
+    ],
+    "evidence": "Matching open can with orange interior and attached lid.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_021",
+    "paths": [
+      "metal/metal190.jpg",
+      "metal/metal191.jpg",
+      "metal/metal192.jpg",
+      "metal/metal193.jpg",
+      "metal/metal194.jpg",
+      "metal/metal195.jpg",
+      "metal/metal197.jpg",
+      "metal/metal198.jpg",
+      "metal/metal199.jpg",
+      "metal/metal200.jpg",
+      "metal/metal201.jpg",
+      "metal/metal202.jpg"
+    ],
+    "evidence": "Unlabelled ribbed can in intact and crushed states; conservative sequence proposal.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_022",
+    "paths": [
+      "metal/metal203.jpg",
+      "metal/metal204.jpg",
+      "metal/metal205.jpg",
+      "metal/metal206.jpg",
+      "metal/metal207.jpg",
+      "metal/metal208.jpg",
+      "metal/metal209.jpg",
+      "metal/metal210.jpg",
+      "metal/metal211.jpg",
+      "metal/metal212.jpg",
+      "metal/metal213.jpg",
+      "metal/metal214.jpg",
+      "metal/metal215.jpg",
+      "metal/metal216.jpg"
+    ],
+    "evidence": "Matching red Bud Light can in crushed states; conservative product-family proposal.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_023",
+    "paths": [
+      "paper/paper3.jpg",
+      "paper/paper370.jpg",
+      "paper/paper521.jpg"
+    ],
+    "evidence": "Matching floral paper plate in intact and bent views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_024",
+    "paths": [
+      "paper/paper10.jpg",
+      "paper/paper166.jpg",
+      "paper/paper283.jpg"
+    ],
+    "evidence": "Matching purple egg-carton texture.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_025",
+    "paths": [
+      "paper/paper94.jpg",
+      "paper/paper238.jpg",
+      "paper/paper440.jpg",
+      "paper/paper459.jpg",
+      "paper/paper466.jpg",
+      "paper/paper529.jpg",
+      "paper/paper532.jpg"
+    ],
+    "evidence": "Matching Harry's razor advertisement, flat and crumpled views; printed-artifact family.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_026",
+    "paths": [
+      "paper/paper587.jpg",
+      "paper/paper588.jpg",
+      "paper/paper589.jpg"
+    ],
+    "evidence": "Matching red printed paper wrapper in folded views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_027",
+    "paths": [
+      "paper/paper590.jpg",
+      "paper/paper591.jpg"
+    ],
+    "evidence": "Matching transparent wrapper with brown ends, two orientations.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_028",
+    "paths": [
+      "paper/paper593.jpg",
+      "paper/paper594.jpg"
+    ],
+    "evidence": "Matching small purple/white carton, two sides.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_029",
+    "paths": [
+      "plastic/plastic2.jpg",
+      "plastic/plastic3.jpg",
+      "plastic/plastic13.jpg"
+    ],
+    "evidence": "Matching transparent rectangular moulded package, open and closed views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_030",
+    "paths": [
+      "plastic/plastic9.jpg",
+      "plastic/plastic10.jpg",
+      "plastic/plastic11.jpg",
+      "plastic/plastic153.jpg"
+    ],
+    "evidence": "Matching red-cap green-label bottle, intact and crushed views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_031",
+    "paths": [
+      "plastic/plastic124.jpg",
+      "plastic/plastic126.jpg",
+      "plastic/plastic127.jpg",
+      "plastic/plastic128.jpg"
+    ],
+    "evidence": "Matching blue-cap water bottle, several views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_032",
+    "paths": [
+      "plastic/plastic171.jpg",
+      "plastic/plastic172.jpg",
+      "plastic/plastic173.jpg",
+      "plastic/plastic174.jpg"
+    ],
+    "evidence": "Matching bright green PINK drinking bottle, cap and body views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_033",
+    "paths": [
+      "plastic/plastic176.jpg",
+      "plastic/plastic177.jpg",
+      "plastic/plastic178.jpg",
+      "plastic/plastic179.jpg",
+      "plastic/plastic180.jpg"
+    ],
+    "evidence": "Matching orange prescription vial and white cap.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_034",
+    "paths": [
+      "plastic/plastic184.jpg",
+      "plastic/plastic185.jpg",
+      "plastic/plastic187.jpg",
+      "plastic/plastic188.jpg",
+      "plastic/plastic189.jpg"
+    ],
+    "evidence": "Matching clear tonic-water bottle with white cap.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_035",
+    "paths": [
+      "plastic/plastic196.jpg",
+      "plastic/plastic198.jpg",
+      "plastic/plastic199.jpg"
+    ],
+    "evidence": "Matching black whey-protein container.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_036",
+    "paths": [
+      "plastic/plastic448.jpg",
+      "plastic/plastic449.jpg",
+      "plastic/plastic450.jpg"
+    ],
+    "evidence": "Matching long black/clear wrapper before crumpling.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_037",
+    "paths": [
+      "plastic/plastic452.jpg",
+      "plastic/plastic453.jpg",
+      "plastic/plastic454.jpg"
+    ],
+    "evidence": "Matching crumpled black wrapper, several orientations.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_038",
+    "paths": [
+      "plastic/plastic455.jpg",
+      "plastic/plastic456.jpg",
+      "plastic/plastic457.jpg"
+    ],
+    "evidence": "Matching padded silver/white mailer, front and reverse.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_039",
+    "paths": [
+      "plastic/plastic459.jpg",
+      "plastic/plastic460.jpg",
+      "plastic/plastic461.jpg"
+    ],
+    "evidence": "Matching red lychee-sweets packet, front/back and crumpled views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_040",
+    "paths": [
+      "plastic/plastic462.jpg",
+      "plastic/plastic463.jpg",
+      "plastic/plastic464.jpg"
+    ],
+    "evidence": "Matching green sweets packet in several states.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_041",
+    "paths": [
+      "plastic/plastic465.jpg",
+      "plastic/plastic466.jpg",
+      "plastic/plastic467.jpg"
+    ],
+    "evidence": "Matching orange watermelon-sweets packet in several states.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_042",
+    "paths": [
+      "plastic/plastic468.jpg",
+      "plastic/plastic469.jpg",
+      "plastic/plastic470.jpg",
+      "plastic/plastic471.jpg",
+      "plastic/plastic472.jpg"
+    ],
+    "evidence": "Matching green soda bottle in intact and crushed states.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_043",
+    "paths": [
+      "plastic/plastic458.jpg",
+      "plastic/plastic473.jpg",
+      "plastic/plastic474.jpg",
+      "plastic/plastic475.jpg",
+      "plastic/plastic476.jpg"
+    ],
+    "evidence": "Matching pale-blue-cap Evian bottle, multiple views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_044",
+    "paths": [
+      "plastic/plastic477.jpg",
+      "plastic/plastic478.jpg"
+    ],
+    "evidence": "Matching Oreo packet, front and reverse.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_045",
+    "paths": [
+      "plastic/plastic479.jpg",
+      "plastic/plastic480.jpg"
+    ],
+    "evidence": "Matching clear marked bag, two views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_046",
+    "paths": [
+      "plastic/plastic481.jpg",
+      "plastic/plastic482.jpg"
+    ],
+    "evidence": "Matching blue/white wrapper, flat and crumpled.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_047",
+    "paths": [
+      "trash/trash50.jpg",
+      "trash/trash60.jpg",
+      "trash/trash87.jpg"
+    ],
+    "evidence": "Matching Cup Noodles container in several views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_048",
+    "paths": [
+      "trash/trash109.jpg",
+      "trash/trash110.jpg",
+      "trash/trash111.jpg",
+      "trash/trash112.jpg",
+      "trash/trash113.jpg"
+    ],
+    "evidence": "Matching yellow Funyuns bag, front/back and crumpled.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_049",
+    "paths": [
+      "trash/trash114.jpg",
+      "trash/trash115.jpg",
+      "trash/trash116.jpg"
+    ],
+    "evidence": "Matching red snack wrapper, front/back and opened.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_050",
+    "paths": [
+      "trash/trash117.jpg",
+      "trash/trash118.jpg"
+    ],
+    "evidence": "Matching Subway paper wrapper in crumpled views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_051",
+    "paths": [
+      "trash/trash120.jpg",
+      "trash/trash121.jpg"
+    ],
+    "evidence": "Matching blue/white food cup, side and top.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_052",
+    "paths": [
+      "trash/trash122.jpg",
+      "trash/trash123.jpg"
+    ],
+    "evidence": "Matching small snack wrapper, front and reverse.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_053",
+    "paths": [
+      "trash/trash124.jpg",
+      "trash/trash125.jpg",
+      "trash/trash126.jpg"
+    ],
+    "evidence": "Matching clear/silver blister package in different opened states.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_054",
+    "paths": [
+      "trash/trash127.jpg",
+      "trash/trash128.jpg"
+    ],
+    "evidence": "Matching yellow/red lip-balm tube, two views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_055",
+    "paths": [
+      "trash/trash129.jpg",
+      "trash/trash130.jpg",
+      "trash/trash131.jpg"
+    ],
+    "evidence": "Matching red/white toothpaste tube, several views.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_056",
+    "paths": [
+      "trash/trash132.jpg",
+      "trash/trash133.jpg"
+    ],
+    "evidence": "Matching turquoise floss case, open and closed.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  },
+  {
+    "proposal_id": "overview_057",
+    "paths": [
+      "trash/trash135.jpg",
+      "trash/trash136.jpg",
+      "trash/trash137.jpg"
+    ],
+    "evidence": "Matching brown padded envelope, flat and crumpled.",
+    "status": "proposed; user approval pending",
+    "identity_caveat": "Visual similarity supports conservative grouping; physical object identity is not independently verified."
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "dataset": "TrashNet dataset-resized",
+  "source_root": "data/dataset-resized",
+  "class_order": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "inclusion_status": "final",
+  "source_images": 2527,
+  "excluded_images": 6,
+  "eligible_images": 2521,
+  "exclusion_policy": "Exclude only the six images in three exact decoded-pixel duplicate pairs with conflicting source labels. All original files are retained unchanged.",
+  "class_counts": [
+    {
+      "class": "cardboard",
+      "source_images": 403,
+      "excluded_images": 0,
+      "eligible_images": 403
+    },
+    {
+      "class": "glass",
+      "source_images": 501,
+      "excluded_images": 3,
+      "eligible_images": 498
+    },
+    {
+      "class": "metal",
+      "source_images": 410,
+      "excluded_images": 1,
+      "eligible_images": 409
+    },
+    {
+      "class": "paper",
+      "source_images": 594,
+      "excluded_images": 0,
+      "eligible_images": 594
+    },
+    {
+      "class": "plastic",
+      "source_images": 482,
+      "excluded_images": 2,
+      "eligible_images": 480
+    },
+    {
+      "class": "trash",
+      "source_images": 137,
+      "excluded_images": 0,
+      "eligible_images": 137
+    }
+  ],
+  "unreadable_images_in_saved_audit": 0,
+  "authoritative_sha256": {
+    "image_inventory.csv": "971f3f1e03a0950c94b10c39b98bcb193be71740fecf22af5ec5b0b7f85f870b",
+    "duplicate_review.csv": "51b4453bfe6bf8477714201ab2cfb4e861a9afe037a7494e4f6cf45600eb05be",
+    "integrity_before.json": "e0bd604ccb8baeb70557a8f79acae61c2ec14092c0516c7c9498365d4bc6c61b",
+    "source_checksums_before.csv": "1743e39fb79ddd4d5f91721a3cb65d72c35d71ac636eb873c888752b6c302749"
+  },
+  "related_image_review": {
+    "status": "bounded grouping policy applied; residual identity uncertainty documented in split_metadata.json",
+    "archive": "manifests/archive/data_review_v1",
+    "candidate_method": "63-bit DCT perceptual hash distance <= 8 OR 64-bit horizontal difference hash distance <= 4; exact pixel duplicates omitted",
+    "candidate_pairs": 357,
+    "grouping_policy": "Retain useful variations. Keep supported same-object or closely related captures together within a subset. Shared packaging, brand, color, shape, or hash similarity alone does not establish identity.",
+    "unresolved_treatment": "Use the existing evidence to document a bounded decision for credible leakage risks before splitting. A narrow conservative group may address a supported but uncertain link; generic visual resemblance alone is insufficient. No additional exclusions.",
+    "limitations": [
+      "Physical-object and capture-session identity are not independently verified.",
+      "The similarity search and visual review are not exhaustive; residual leakage cannot be ruled out.",
+      "Archived group proposals are evidence, not approved assignments."
+    ],
+    "evidence_sha256": {
+      "related_groups.csv": "6eb8113ed352764b360b0358ebfdf6a6b977ded34cc3e33d82f048b8b98039c1",
+      "near_duplicate_review.csv": "1d4f1d4cf33b8353d13148b9468ecdee8b08957043cb992330ba8ccb91e5f5c2",
+      "group_review_assessments.json": "e4967a92f63e8c26fdc3a108957cb7089c872c4863a61eafc83763767b6ea229"
+    }
+  },
+  "split": {
+    "status": "created_and_verified",
+    "created": true,
+    "proposed_ratios": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "seed": 42,
+    "test_use": "Held-out test examples remain unused throughout the homework.",
+    "manifest": "manifests/split_manifest.csv",
+    "metadata": "manifests/split_metadata.json",
+    "manifest_sha256": "b1e09badb3d1347f7b2d934c5824b10daa7b57f5a4e9c06be89d05b56659546f"
+  }
+}
