@@ -1,8 +1,10 @@
-# Dataset
-data/
+# Dataset; only the authoritative rules workbook is eligible for tracking
+/data/*
+!/data/WasteWise_UF_Recycling_Rules.xlsx
 
 # Jupyter
 .ipynb_checkpoints/
+/item_level_review/.review.lock
 
 # Python
 __pycache__/
