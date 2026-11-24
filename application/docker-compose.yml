@@ -1,0 +1,79 @@
+name: wastewise
+
+services:
+  wastewise:
+    build:
+      context: .
+      additional_contexts:
+        project_src: ../src
+    ports:
+      - "127.0.0.1:7860:7860"
+    # Metrics are reachable by Prometheus inside Compose, not published to the host.
+    expose:
+      - "8000"
+    volumes:
+      - type: bind
+        source: ../results/experiments/efficientnet_b0/baseline_seed42_5epochs
+        target: /opt/wastewise/results/experiments/efficientnet_b0/baseline_seed42_5epochs
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../data/WasteWise_UF_Recycling_Rules.xlsx
+        target: /opt/wastewise/data/WasteWise_UF_Recycling_Rules.xlsx
+        read_only: true
+        bind:
+          create_host_path: false
+    # Keep temporary uploads out of the container's persistent writable layer.
+    tmpfs:
+      - /tmp
+    stop_grace_period: 30s
+    # Override only the container bind address and UI port; preserve SIGTERM
+    # handling and the app's finally-based upload cleanup.
+    command:
+      - python
+      - -c
+      - |
+        import signal
+        import sys
+        import app
+
+        app.HOST = "0.0.0.0"
+        app.PORT = 7860
+        signal.signal(signal.SIGTERM, lambda *_: sys.exit(0))
+        demo = app.build_app()
+        try:
+            app.launch_app(demo)
+        finally:
+            demo.close()
+            app.UPLOAD_CACHE.cleanup()
+
+  prometheus:
+    image: prom/prometheus:v3.16.0
+    ports:
+      - "127.0.0.1:9090:9090"
+    volumes:
+      - type: bind
+        source: ./prometheus.yml
+        target: /etc/prometheus/prometheus.yml
+        read_only: true
+        bind:
+          create_host_path: false
+      - prometheus_data:/prometheus
+    depends_on:
+      - wastewise
+
+  grafana:
+    image: grafana/grafana:13.3.1
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
+
+volumes:
+  prometheus_data:
+  grafana_data:

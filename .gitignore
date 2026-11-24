@@ -1,6 +1,14 @@
-# Dataset; only the authoritative rules workbook is eligible for tracking
+# Datasets; keep only the rules workbook and named confidence-test support files
 /data/*
 !/data/WasteWise_UF_Recycling_Rules.xlsx
+!/data/confidence_test/
+/data/confidence_test/*
+!/data/confidence_test/README.md
+!/data/confidence_test/download_images.py
+!/data/confidence_test/labels.csv
+!/data/confidence_test/sources.csv
+!/data/confidence_test/review.csv
+!/data/confidence_test/duplicate_checks.csv
 
 # Jupyter
 .ipynb_checkpoints/

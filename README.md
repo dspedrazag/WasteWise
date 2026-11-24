@@ -28,12 +28,13 @@ relatedness, so residual leakage remains a limitation.
 
 | Notebook | Role and current status |
 | --- | --- |
-| [playground.ipynb](playground.ipynb) | **Primary dataset exploration and preparation notebook.** Original exploration, exclusions, approved split, leakage limitations, and integrity checks. Image examples use training images only. |
+| [playground.ipynb](playground.ipynb) | **Primary dataset exploration and preparation notebook.** Original exploration, exclusions, approved split, leakage limitations, and integrity checks, followed by validation-set confidence analysis and external-image testing. |
 | [01_mobilenetv3.ipynb](01_mobilenetv3.ipynb) | Completed MobileNetV3-Small baseline. |
 | [02_resnet18.ipynb](02_resnet18.ipynb) | Completed ResNet18 baseline. |
 | [03_efficientnetb0.ipynb](03_efficientnetb0.ipynb) | Completed EfficientNet-B0 baseline. |
 | [04_model_comparison.ipynb](04_model_comparison.ipynb) | Three-model comparison, candidate selection, and weighted-loss comparison. |
 | [05_efficientnetb0_weighted_loss.ipynb](05_efficientnetb0_weighted_loss.ipynb) | Completed class-weighted cross-entropy experiment. |
+| [06_wastewise_app_prototype.ipynb](06_wastewise_app_prototype.ipynb) | Gradio prototype with item-level guidance, the provisional 85% confidence threshold, and saved workflow validation. |
 
 Each model notebook has its own architecture definition and run controls, with
 shared loading, training, evaluation and visualization code in
@@ -100,8 +101,9 @@ All experiments load the saved manifest and use the same validation rows.
 ## Python dependencies
 
 The experiments used **Python 3.13.16** on macOS with Apple MPS acceleration.
-The verified package versions are documented here instead of separate
-requirements files:
+The verified experiment package versions are documented here. The standalone
+Docker application has separate pinned dependencies in
+[`application/requirements.txt`](application/requirements.txt).
 
 | Package | Version |
 | --- | --- |
@@ -127,9 +129,9 @@ in the [experiment guide](results/experiments/README.md#environment).
 
 ## Viewing and rerunning the notebooks
 
-All six notebooks include saved tables and figures for viewing on GitHub without
-running Python or obtaining the dataset. The image examples are embedded in the
-notebooks; they are not a replacement for the original image files.
+The notebooks include saved results for viewing on GitHub without running Python
+or obtaining the dataset. Image examples in the analysis notebooks are embedded;
+they are not a replacement for the original image files.
 
 For local execution, use an environment with the documented packages and start
 JupyterLab from the cloned project directory:
@@ -144,7 +146,7 @@ the original experiments used **Python (scientific)**. No notebook installs or
 upgrades packages.
 
 The published files alone do not support a complete top-to-bottom execution of
-the six notebooks. Playground requires `data/dataset-resized.zip` and the extracted
+all notebooks. Playground requires `data/dataset-resized.zip` and the extracted
 images in `data/dataset-resized/`. Notebooks 01–05 require the extracted images to
 recreate their example galleries. Their saved metrics, training curves, confusion
 matrices, and numerical comparisons can be loaded from the published manifests
@@ -164,9 +166,16 @@ is elsewhere. Each notebook initializes its own variables independently.
 
 Playground uses read-only local dataset checks in place of its earlier
 download/extraction cells. Its image-property summaries use the saved inventory,
-and its examples use training images only. Running it does not recreate the split
-or write source images. The original class-distribution figure and historical
-exploration remain available; the exact pre-update notebook is preserved as
+and its original preparation examples use training images only. The appended
+confidence analysis uses validation images and a separate 20-image external set;
+it does not evaluate the held-out TrashNet test set. Its inference cells require
+the selected EfficientNet-B0 checkpoint. The external test's
+[support files](data/confidence_test/README.md) document sources, licenses,
+reviewed labels, and duplicate checks; downloaded images remain excluded from Git
+and must be obtained locally before rerunning those cells. Running the notebook
+does not recreate the split or write source images. The original
+class-distribution figure and historical exploration remain available; the
+exact pre-update notebook is preserved as
 `playground_before_preparation.ipynb` in an external local backup.
 
 For a read-only source-integrity check outside JupyterLab:
@@ -179,6 +188,82 @@ The older `audit` and `review` commands generate detailed evidence, refuse to
 overwrite existing artifacts, and are not required for the current workflow.
 Importing the module only defines functions; it does not run an audit.
 
+## Local Docker deployment and monitoring
+
+[`application/app.py`](application/app.py) runs the standalone Gradio workflow
+with the selected unweighted EfficientNet-B0 model, CPU inference, the provisional
+85% confidence threshold, and the existing UF recycling rules. Docker Compose runs
+WasteWise, Prometheus, and Grafana locally, including on an Apple Silicon Mac.
+
+Use Docker Desktop with Docker Compose and BuildKit support for named build
+contexts. Keep `application/` inside the complete project checkout so Compose can
+read `src/` and mount these existing files without copying them:
+
+- `results/experiments/efficientnet_b0/baseline_seed42_5epochs/` must contain
+  `best_model.pt`, `config.json`, `metrics.json`, and `complete.json`. The app checks
+  the saved artifact hashes. **The checkpoint is excluded from Git and must be
+  supplied locally; a fresh clone alone is insufficient.** Use the matching
+  checkpoint from the completed baseline run, not the weighted-loss experiment.
+- `data/WasteWise_UF_Recycling_Rules.xlsx` is the authoritative rules workbook
+  included in the repository. The model directory and workbook are mounted
+  read-only; the original image dataset is not required to run the app.
+
+From the repository root, start all three services:
+
+```bash
+cd application
+docker compose up -d --build
+```
+
+Open [WasteWise](http://localhost:7860), [Prometheus](http://localhost:9090), and
+[Grafana](http://localhost:3000). These ports bind only to `127.0.0.1`. Stop the
+services from `application/` with:
+
+```bash
+docker compose down
+```
+
+The Docker image uses Python 3.13 (`python:3.13-slim-bookworm`) and the direct
+dependency versions pinned in `application/requirements.txt`, including CPU
+PyTorch/torchvision. Compose selects Prometheus `v3.16.0` and Grafana `13.3.1`.
+This deployment environment is separate from the macOS/MPS experiment environment
+above. The Python base-image patch version and transitive Python dependencies
+are resolved during the build, so the configuration is not a complete immutable
+environment lock.
+
+### Manual Grafana configuration
+
+Complete Grafana's first-login setup, add a **Prometheus** data source with the
+server URL `http://prometheus:9090`, and select **Save & test**. This is the Compose
+service address used by Grafana. Create dashboard panels manually using that
+data source; no dashboard or data-source provisioning is included.
+
+| Panel | PromQL query |
+| --- | --- |
+| Mean inference latency (seconds, last 5 minutes) | `sum(rate(wastewise_inference_duration_seconds_sum[5m])) / sum(rate(wastewise_inference_duration_seconds_count[5m]))` |
+| Prediction count | `sum(wastewise_predictions_total)` |
+| Predicted materials | `sum by (material) (wastewise_predictions_total)` |
+| Withholding event count | `sum(wastewise_withholding_total)` |
+| Withholding rate (percent, 0–100) | `100 * sum(wastewise_decisions_total{outcome="withheld"}) / sum(wastewise_decisions_total)` |
+
+Count panels and the withholding percentage above cover the current app process;
+counters reset when it restarts. Latency measures the model call and softmax,
+excluding image decoding, preprocessing, and queue time. Predictions include
+below-threshold results and expose all six material labels. The percentage uses
+the first completed outcome per scan attempt (`withheld` or `guidance`), excluding
+unfinished scans and processing errors; repeated rendering and navigation do not
+add completed decisions. The event counter is not the percentage numerator.
+Before any completed decisions, the percentage is undefined. An idle latency
+window likewise has no samples.
+
+Prometheus scrapes `wastewise:8000` every five seconds inside Compose; this metrics
+port is not published to the host. Metrics contain aggregate numbers and fixed
+material/outcome labels, without images, filenames, or personal/session labels.
+Uploads use temporary container storage in `/tmp` (`tmpfs`) with the app's
+existing session-disconnect and process-exit cleanup. Named volumes preserve
+Prometheus history and manually created Grafana settings across ordinary
+`docker compose down` / `up` cycles; those volumes are not repository files.
+
 ## Repository contents
 
 The published project contains source code, completed notebooks with saved
@@ -187,12 +272,22 @@ original image dataset is excluded by `.gitignore` and must be provided locally
 at the recorded paths; verify its fingerprints before reproducing the analysis.
 
 Historical notebooks, eight superseded review records, and the review galleries
-are preserved in an external local backup, which is not part of the published
+are preserved in an external local backup that is not part of the published
 project. Galleries retain their layout under `data_review/`. The three
 source/notebook snapshots matching historical experiment hashes are in
 `experiment_provenance/`; current loaders and split
 verification do not require them. Redundant verification outputs, autogenerated
 notebook checkpoints, and two superseded archive records were removed.
+
+[Baseline training-code evidence](provenance/baseline_training_evidence.json)
+preserves the exact fingerprint-matching ResNet-18 notebook as UTF-8 text and
+the recorded input cells from all three baseline training sessions. It identifies
+the matching shared modules: the tracked `src/experiment_data.py` and the backup's
+`experiment_provenance/baseline_experiment_training.py` and
+`baseline_experiment_results.py`. The exact fingerprinted MobileNetV3-Small and
+EfficientNet-B0 notebook files remain unrecovered; session history supports their
+code provenance but does not establish those full-file matches or identical
+retraining results. The evidence archive is not an executable notebook.
 
 Historical notebooks and gallery links require their original project-relative
 layout to be restored before reuse. The retained evidence tables still record

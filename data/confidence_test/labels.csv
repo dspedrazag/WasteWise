@@ -1,0 +1,21 @@
+filename,expected_material,item_description,case_type,guidance_scope,source_year_approx,commons_title,source_url,label_status
+plastic_01.jpg,plastic,plastic water bottle,single_material,candidate_pilot,2023,File:An empty bottle water plastic.jpg,https://commons.wikimedia.org/wiki/File:An_empty_bottle_water_plastic.jpg,source_based_pending_visual_review
+plastic_02.jpg,plastic,empty plastic bottle,single_material,candidate_pilot,2025,File:Empty Plastic Bottle.jpg,https://commons.wikimedia.org/wiki/File:Empty_Plastic_Bottle.jpg,source_based_pending_visual_review
+plastic_03.jpg,plastic,PET bottle,single_material,candidate_pilot,2024,File:PET bottle.jpg,https://commons.wikimedia.org/wiki/File:PET_bottle.jpg,source_based_pending_visual_review
+metal_01.jpg,metal,aluminum soda can,single_material,candidate_pilot,2019,File:12-ounce Aluminum Soda Can (32167233397).jpg,https://commons.wikimedia.org/wiki/File:12-ounce_Aluminum_Soda_Can_%2832167233397%29.jpg,source_based_pending_visual_review
+metal_02.jpg,metal,crushed cola can,single_material,candidate_pilot,2025,File:Crushed coka cola can.jpg,https://commons.wikimedia.org/wiki/File:Crushed_coka_cola_can.jpg,source_based_pending_visual_review
+metal_03.jpg,metal,aluminum cola can,single_material,candidate_pilot,2023,File:A can of cola on a car.jpg,https://commons.wikimedia.org/wiki/File:A_can_of_cola_on_a_car.jpg,source_based_pending_visual_review
+cardboard_01.jpg,cardboard,cardboard box,single_material,candidate_pilot,2023,File:Cardboard box.jpg,https://commons.wikimedia.org/wiki/File:Cardboard_box.jpg,source_based_pending_visual_review
+cardboard_02.png,cardboard,shipping cardboard box,single_material,candidate_pilot,2022,File:Caja de cartón.png,https://commons.wikimedia.org/wiki/File:Caja_de_cart%C3%B3n.png,source_based_pending_visual_review
+cardboard_03.jpg,cardboard,folded and assembled cardboard box,single_material,review_item_scope,2023,File:Cardbord box 001.jpg,https://commons.wikimedia.org/wiki/File:Cardbord_box_001.jpg,source_based_pending_visual_review
+glass_01.jpg,glass,brown glass bottle,single_material,review_item_scope,2018,File:20181028 Vichy beer bottle.jpg,https://commons.wikimedia.org/wiki/File:20181028_Vichy_beer_bottle.jpg,source_based_pending_visual_review
+glass_02.jpg,glass,glass jar,single_material,review_item_scope,2021,File:Empty Clear Jar (51330638811).jpg,https://commons.wikimedia.org/wiki/File:Empty_Clear_Jar_%2851330638811%29.jpg,source_based_pending_visual_review
+glass_03.jpg,glass,glass vessel on table,single_material,review_item_scope,2022,File:Glass bottle.jpg,https://commons.wikimedia.org/wiki/File:Glass_bottle.jpg,source_based_pending_visual_review
+ood_01.jpg,,shirt on folding board,out_of_distribution,withhold,2023,"File:Faltbrett2, T-Shirt aufgelegt.jpg",https://commons.wikimedia.org/wiki/File:Faltbrett2%2C_T-Shirt_aufgelegt.jpg,source_based_pending_visual_review
+ood_02.jpg,,sneakers,out_of_distribution,withhold,2022,File:White sneakers.jpg,https://commons.wikimedia.org/wiki/File:White_sneakers.jpg,source_based_pending_visual_review
+ood_03.jpg,,apple,out_of_distribution,withhold,2021,File:Red Apple1.jpg,https://commons.wikimedia.org/wiki/File:Red_Apple1.jpg,source_based_pending_visual_review
+ambiguous_01.jpg,,plastic bottle and paper cup,multiple_items,withhold,2026,File:202606 PET bottle and paper cup on Shalun beach.jpg,https://commons.wikimedia.org/wiki/File:202606_PET_bottle_and_paper_cup_on_Shalun_beach.jpg,source_based_pending_visual_review
+ambiguous_02.png,,"glass, aluminum and plastic containers",multiple_items,withhold,2022,File:Drink containers.png,https://commons.wikimedia.org/wiki/File:Drink_containers.png,source_based_pending_visual_review
+ambiguous_03.jpg,,pile of plastic and other waste,multiple_items,withhold,2026,File:Plastic Trash Pile.jpg,https://commons.wikimedia.org/wiki/File:Plastic_Trash_Pile.jpg,source_based_pending_visual_review
+scope_01.jpg,plastic,reusable plastic water bottle,single_material,review_item_scope,2020,File:Clear water bottle.jpg,https://commons.wikimedia.org/wiki/File:Clear_water_bottle.jpg,source_based_pending_visual_review
+scope_02.jpg,plastic,plastic cup,single_material,review_item_scope,2024,File:Plastic cup.jpg,https://commons.wikimedia.org/wiki/File:Plastic_cup.jpg,source_based_pending_visual_review

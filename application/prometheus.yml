@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: wastewise
+    static_configs:
+      - targets: ["wastewise:8000"]

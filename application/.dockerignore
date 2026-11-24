@@ -1,0 +1,5 @@
+# Only these files enter the main application build context.
+**
+!Dockerfile
+!requirements.txt
+!app.py
