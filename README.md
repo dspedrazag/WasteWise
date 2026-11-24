@@ -156,7 +156,8 @@ The model notebooks retain `MODE="reload"` and `RESTORE_CHECKPOINT=False`;
 notebook 04 directly loads saved results. Reload does not run inference or
 remeasure timing. A missing image stops its visualization cell; saved figures
 remain viewable in the published notebook. Restoring a model for inference
-requires its excluded `best_model.pt`. The [experiment guide](results/experiments/README.md)
+requires its matching `best_model.pt`; the selected EfficientNet-B0 baseline
+checkpoint is included in the repository. The [experiment guide](results/experiments/README.md)
 describes the additional requirements for retraining.
 
 Playground locates the project root from the current directory or its parents,
@@ -199,11 +200,10 @@ Use Docker Desktop with Docker Compose and BuildKit support for named build
 contexts. Keep `application/` inside the complete project checkout so Compose can
 read `src/` and mount these existing files without copying them:
 
-- `results/experiments/efficientnet_b0/baseline_seed42_5epochs/` must contain
-  `best_model.pt`, `config.json`, `metrics.json`, and `complete.json`. The app checks
-  the saved artifact hashes. **The checkpoint is excluded from Git and must be
-  supplied locally; a fresh clone alone is insufficient.** Use the matching
-  checkpoint from the completed baseline run, not the weighted-loss experiment.
+- `results/experiments/efficientnet_b0/baseline_seed42_5epochs/` contains
+  `best_model.pt`, `config.json`, `metrics.json`, and `complete.json`, all included
+  in the repository. The app checks the saved artifact hashes. The selected
+  checkpoint is from the completed unweighted EfficientNet-B0 baseline run.
 - `data/WasteWise_UF_Recycling_Rules.xlsx` is the authoritative rules workbook
   included in the repository. The model directory and workbook are mounted
   read-only; the original image dataset is not required to run the app.
@@ -294,6 +294,7 @@ layout to be restored before reuse. The retained evidence tables still record
 those original gallery paths. The removed `source_checksums_after.csv` was
 identical to the retained `manifests/source_checksums_before.csv`. Exact historical
 source versions require the external provenance snapshots and are not included
-in a fresh checkout. Model checkpoints remain local and excluded from Git;
-completed configurations, metrics, training histories, and prediction tables
+in a fresh checkout. The selected EfficientNet-B0 baseline checkpoint is included
+in the repository; other model checkpoints remain local and excluded from Git.
+Completed configurations, metrics, training histories, and prediction tables
 remain eligible for publication.
